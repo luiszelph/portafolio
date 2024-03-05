@@ -30,8 +30,8 @@ const Navbar = () => {
         className={[
             "absolute",
             !isMenuOpen
-                ? "z-[300px] absolute w-[69px] p-10 left-4 h-[47px]"
-                : "items-center justify-between flex flex-col z-[300px] fixed w-screen h-screen bg-[#2B2B29]"]} >
+                ? "z-[300] absolute w-[69px] p-10 h-[47px]"
+                : "	text-align: justify; items-center justify-around flex flex-col z-[300] absolute w-screen h-screen bg-[#2B2B29]"]} >
         <Menu
             isMenuOpen={isMenuOpen}
             handleMenu={() => setIsMenuOpen(!isMenuOpen)}/>
