@@ -1,10 +1,11 @@
 import React from 'react'
 
-const About = () => {
+const Contact = () => {
+
   return (
-    <div name="About" className='flex flex-col items-center h-screen w-screen'>
+    <div name="Contact" className='mt-80 flex flex-col items-center h-screen w-screen'>
         
-        <h2 className='font-semibold text-[40px]'>About</h2>
+        <h2 className='font-semibold text-[40px]'>Contact</h2>
 
         <div className='w-screen mt-[5%] pt-[10%] pb-[10%] bg-[#2B2B29] p-10'>
             <p className='text-white'>
@@ -45,4 +46,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Contact;
