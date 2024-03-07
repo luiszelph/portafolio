@@ -31,11 +31,11 @@ const Experience = () => {
   ];
 
   return (
-    <div name="Experience" className='mt-80 flex flex-col items-center h-screen w-screen'>
+    <div name="Experience" className='mt-40 flex flex-col items-center justify-center'>
         
         <h2 className='font-semibold text-[40px]'>Experience</h2>
 
-        <div className='w-screen grid-cols-3 grid mt-[5%] pt-[10%] pb-[10%] bg-[#2B2B29] p-10'>
+        <div className='w-screen grid-cols-3 gap-8 grid mt-[5%] pt-[10%] pb-[10%] bg-[#2B2B29] p-10'>
             {technologies.map(t => (
                 <div key={t.name} className='w-[100px] h-[100px]'>
                     <img src={t.imageSrc} alt="technologie"/>

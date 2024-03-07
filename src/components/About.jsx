@@ -8,37 +8,8 @@ const About = () => {
 
         <div className='w-screen mt-[5%] pt-[10%] pb-[10%] bg-[#2B2B29] p-10'>
             <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>
-            <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>    
-            <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>
-            <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>
-            <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>
-            <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>    
-            <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>
-            <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>
-            <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>
-            <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>    
-            <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>
-            <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>
-            <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>
-            <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>    
-            <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>
-            <p className='text-white'>
-                Aqui va tener que ir algo de texto sobre mi personalidad</p>
+            Ingeniero en computación en la Universidad Tecmilenio. Cuento con experiencia en el área de desarrollo de software (aplicaciones web). Me considero una persona integra, responsable, comprometida y empatica.
+            </p>
         </div>
 
     </div>

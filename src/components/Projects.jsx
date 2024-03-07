@@ -9,13 +9,13 @@ const Projects = () => {
         projectsImageSrc: projectTicTacToe,
         gitHubLink: 'https://github.com/luiszelph/tictactoe',
         deployLink: 'https://luiszelph.github.io/tictactoe/'
-    },
-    {
-        description: 'Aqui va tener que ir algo de texto sobre mi personalidad' ,
-        projectsImageSrc: projectTicTacToe,
-        gitHubLink: 'https://github.com/luiszelph/tictactoe',
-        deployLink: 'https://luiszelph.github.io/tictactoe/'
     }
+    // ,{
+    //     description: 'Aqui va tener que ir algo de texto sobre mi personalidad' ,
+    //     projectsImageSrc: projectTicTacToe,
+    //     gitHubLink: 'https://github.com/luiszelph/tictactoe',
+    //     deployLink: 'https://luiszelph.github.io/tictactoe/'
+    // }
     // ,{
     //     description: 'Aqui va tener que ir algo de texto sobre mi personalidad' ,
     //     projectsImageSrc: projectTicTacToe,
