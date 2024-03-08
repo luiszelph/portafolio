@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar.jsx";
 import About from "./components/About.jsx";
 import Projects from "./components/Projects.jsx";
 import Experience from "./components/Experience.jsx";
-import Contact from "./components/Contact.jsx";
+//import Contact from "./components/Contact.jsx";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <About/>
       <Projects/>
       <Experience/>
-      <Contact/>
+      {/* <Contact/> */}
     </div>
   );
 }
