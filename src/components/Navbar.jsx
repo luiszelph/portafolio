@@ -18,11 +18,11 @@ const Navbar = () => {
         {
             link: 'Experience',
             id: 3
-        },
-        {
-            link: 'Contact',
-            id: 4
         }
+        // ,{
+        //     link: 'Contact',
+        //     id: 4
+        // }
     ];
 
     return (
