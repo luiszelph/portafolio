@@ -5,7 +5,7 @@ const Projects = () => {
 
     const projects = [
     {
-        description: 'Aqui va tener que ir algo de texto sobre mi personalidad' ,
+        description: 'Mi primer proyecto realizado en react, un simple juego de tictactoe.' ,
         projectsImageSrc: projectTicTacToe,
         gitHubLink: 'https://github.com/luiszelph/tictactoe',
         deployLink: 'https://luiszelph.github.io/tictactoe/'

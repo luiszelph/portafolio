@@ -31,7 +31,7 @@ const Navbar = () => {
             "absolute",
             !isMenuOpen
                 ? "z-[300] absolute w-[69px] p-10 h-[47px]"
-                : "	text-align: justify; items-center justify-around flex flex-col z-[300] absolute w-screen h-screen bg-[#2B2B29]"]} >
+                : "text-align: justify; items-center justify-around flex flex-col z-[300] absolute w-screen h-screen bg-[#2B2B29]"]} >
         <Menu
             isMenuOpen={isMenuOpen}
             handleMenu={() => setIsMenuOpen(!isMenuOpen)}/>
