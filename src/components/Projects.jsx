@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import projectTicTacToe from '../assets/projectTicTacToe.png';
+import projectCalculator from '../assets/projectCalculator.png';
 
 const Projects = () => {
 
@@ -9,13 +10,13 @@ const Projects = () => {
         projectsImageSrc: projectTicTacToe,
         gitHubLink: 'https://github.com/luiszelph/tictactoe',
         deployLink: 'https://luiszelph.github.io/tictactoe/'
+    },
+    {
+        description: 'Una pequeña calculadora.' ,
+        projectsImageSrc: projectCalculator,
+        gitHubLink: 'https://github.com/luiszelph/calculator',
+        deployLink: 'https://luiszelph.github.io/calculator/'
     }
-    // ,{
-    //     description: 'Aqui va tener que ir algo de texto sobre mi personalidad' ,
-    //     projectsImageSrc: projectTicTacToe,
-    //     gitHubLink: 'https://github.com/luiszelph/tictactoe',
-    //     deployLink: 'https://luiszelph.github.io/tictactoe/'
-    // }
     // ,{
     //     description: 'Aqui va tener que ir algo de texto sobre mi personalidad' ,
     //     projectsImageSrc: projectTicTacToe,
