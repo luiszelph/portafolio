@@ -40,7 +40,7 @@ const Projects = () => {
                         {p.description}</p>
                         <div className="flex">
                             <a href={p.gitHubLink} target="_blank">Github</a>
-                            <a className='ml-4' target="_blank" href={p.deployLink}>Deploy</a>
+                            <a className='ml-4' target="_blank" href={p.deployLink}>Visitar</a>
                         </div>
                     </span>
                 </div>
