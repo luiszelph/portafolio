@@ -13,12 +13,12 @@ const Experience = () => {
         },
         {
             name: 'tdisa',
-            description: 'Trabaje en proyecto web por 4 meses desde Septiembre a Diciembre del 2022.' ,
+            description: 'Realice practicas profesionales de Enero a Agosto del 2022.' ,
             imageSrc: tdisa
         },
         {
             name: 'innatos',
-            description: 'Trabaje en esta empresa desde Enero a Noviembre del 2023.' ,
+            description: 'Realice practicas profesionales de Enero a Agosto del 2022.' ,
             imageSrc: innatos
         }
     ];
@@ -31,10 +31,10 @@ const Experience = () => {
         <div className='w-screen grid-cols-3 gap-8 grid mt-[5%] pt-[10%] pb-[10%] bg-[#2B2B29] p-10'>
             {experience.map(t => (
                 <div key={t.name} className='w-[200px] h-[300px]'>
-                    <p className='text-white'>
+                    <p className='w-[100px] text-white text-center'>
                         {t.description}
                     </p>
-                    <img src={t.imageSrc} alt="experience"/>
+                    <img src={t.imageSrc} className='w-[100px] h-[100px]' alt="experience"/>
                 </div>
             ))}
         </div>
