@@ -4,6 +4,10 @@ import css from '../assets/technologies/css.png';
 import github from '../assets/technologies/github.png';
 import html from '../assets/technologies/html.png';
 import reactjs from '../assets/technologies/reactjs.png';
+import angularjs from '../assets/technologies/angular.png';
+import csharp from '../assets/technologies/csharp.png';
+import vb from '../assets/technologies/vb.png';
+import sql from '../assets/technologies/sql.png';
 
 const Technologies = () => {
 
@@ -27,6 +31,22 @@ const Technologies = () => {
     {
         name: 'reactjs',
         imageSrc: reactjs
+    },
+    {
+        name: 'angularjs',
+        imageSrc: angularjs
+    },
+    {
+        name: 'csharp',
+        imageSrc: csharp
+    },
+    {
+        name: 'vb',
+        imageSrc: vb
+    },
+    {
+        name: 'sql',
+        imageSrc: sql
     }
   ];
 

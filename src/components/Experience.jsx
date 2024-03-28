@@ -30,11 +30,11 @@ const Experience = () => {
 
         <div className='w-screen grid-cols-3 gap-8 grid mt-[5%] pt-[10%] pb-[10%] bg-[#2B2B29] p-10'>
             {experience.map(t => (
-                <div key={t.name} className='w-[200px] h-[300px]'>
-                    <p className='w-[100px] text-white text-center'>
+                <div key={t.name} className='w-[300px] h-[300px]'>
+                    {/* <p className='w-[100px] text-white text-center'>
                         {t.description}
-                    </p>
-                    <img src={t.imageSrc} className='w-[100px] h-[100px]' alt="experience"/>
+                    </p> */}
+                    <img src={t.imageSrc} alt="experience"/>
                 </div>
             ))}
         </div>
