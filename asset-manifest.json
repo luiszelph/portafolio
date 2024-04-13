@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/portafolio/static/css/main.c499cb3a.css",
-    "main.js": "/portafolio/static/js/main.43d5cee2.js",
+    "main.js": "/portafolio/static/js/main.c4b8abc1.js",
     "static/js/453.7d1ffe6d.chunk.js": "/portafolio/static/js/453.7d1ffe6d.chunk.js",
-    "static/media/developerZelph.png": "/portafolio/static/media/developerZelph.68e713d316fd0752f3ab.png",
+    "static/media/developerZelph.png": "/portafolio/static/media/developerZelph.d6098d892865d2f008e7.png",
     "static/media/projectCalculator.png": "/portafolio/static/media/projectCalculator.2130d9912f602c16cfb2.png",
     "static/media/rp.png": "/portafolio/static/media/rp.95603057d8b8404e1b77.png",
     "static/media/projectTicTacToe.png": "/portafolio/static/media/projectTicTacToe.f5db40f2a57f109eb0e6.png",
@@ -12,11 +12,11 @@
     "static/media/innatos.png": "/portafolio/static/media/innatos.227d7f338ee0fec7b6f3.png",
     "index.html": "/portafolio/index.html",
     "main.c499cb3a.css.map": "/portafolio/static/css/main.c499cb3a.css.map",
-    "main.43d5cee2.js.map": "/portafolio/static/js/main.43d5cee2.js.map",
+    "main.c4b8abc1.js.map": "/portafolio/static/js/main.c4b8abc1.js.map",
     "453.7d1ffe6d.chunk.js.map": "/portafolio/static/js/453.7d1ffe6d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c499cb3a.css",
-    "static/js/main.43d5cee2.js"
+    "static/js/main.c4b8abc1.js"
   ]
 }
