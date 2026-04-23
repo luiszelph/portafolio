@@ -1,26 +1,94 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Paleta: #fcd2a8 #a2b0c0 #cdd2d9 #3d3632 #010000 — light: acento #bfb6a4 */
+html.light {
+  color-scheme: light;
+  --page: #ffffff;
+  --raised: #fafafa;
+  --subtle: #f3f4f5;
+  --ink: #010000;
+  --ink-muted: #3d3632;
+  --accent: #bfb6a4;
+  --line: #cdd2d9;
+  --line-strong: #a2b0c0;
+  --panel: #e8eaed;
+  --panel-ink: #010000;
+  --hero-glow-from: #cdd2d9;
+  --hero-glow-to: #ffffff;
+  --card-img-bg: #eef0f2;
+  --nav-bg: color-mix(in srgb, var(--page) 90%, transparent);
+  --switch-knob: #ffffff;
+}
+
+html.dark {
+  color-scheme: dark;
+  --page: #010000;
+  --raised: #141210;
+  --subtle: #1a1816;
+  --ink: #cdd2d9;
+  --ink-muted: #a2b0c0;
+  --accent: #fcd2a8;
+  --line: #3d3632;
+  --line-strong: #a2b0c0;
+  --panel: #3d3632;
+  --panel-ink: #cdd2d9;
+  --hero-glow-from: #3d3632;
+  --hero-glow-to: #010000;
+  --card-img-bg: #0d0c0b;
+  --nav-bg: color-mix(in srgb, var(--page) 88%, transparent);
+  --switch-knob: #1a1816;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-page: var(--page);
+  --color-raised: var(--raised);
+  --color-subtle: var(--subtle);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-accent: var(--accent);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-panel: var(--panel);
+  --color-panel-ink: var(--panel-ink);
+  --color-hero-glow-from: var(--hero-glow-from);
+  --color-hero-glow-to: var(--hero-glow-to);
+  --color-card-img-bg: var(--card-img-bg);
+  --color-nav-bg: var(--nav-bg);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+body {
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+@keyframes tech-carousel-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.tech-carousel-track {
+  animation: tech-carousel-scroll 28s linear infinite;
+}
+
+.tech-carousel-fade:hover .tech-carousel-track {
+  animation-play-state: paused;
+}
+
+.tech-carousel-fade {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
 }
