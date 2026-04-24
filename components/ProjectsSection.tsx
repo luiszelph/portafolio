@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-asset";
 import type { Project } from "@/lib/portfolio-types";
 
 type ProjectsSectionProps = {
@@ -38,7 +39,7 @@ export function ProjectsSection({
             >
               <div className="relative aspect-video w-full bg-card-img-bg">
                 <Image
-                  src={project.imageSrc}
+                  src={publicAsset(project.imageSrc)}
                   alt={`Captura del proyecto ${project.id}`}
                   fill
                   sizes="(min-width: 640px) 45vw, 100vw"

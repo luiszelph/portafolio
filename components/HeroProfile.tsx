@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-asset";
 import type { HeroData } from "@/lib/portfolio-types";
 
 type HeroProfileProps = {
@@ -23,7 +24,7 @@ export function HeroProfile({ hero }: HeroProfileProps) {
         <div className="relative shrink-0">
           <div className="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-hero-glow-from to-hero-glow-to opacity-70 blur dark:opacity-90" />
           <Image
-            src={hero.imageSrc}
+            src={publicAsset(hero.imageSrc)}
             alt={hero.imageAlt}
             width={320}
             height={320}

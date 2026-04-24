@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-asset";
 import type { Experience } from "@/lib/portfolio-types";
 
 type ExperienceSectionProps = {
@@ -37,7 +38,7 @@ export function ExperienceSection({
               <div className="flex h-full flex-col sm:flex-row">
                 <div className="relative h-44 w-full bg-card-img-bg sm:h-auto sm:w-44 sm:min-w-44">
                   <Image
-                    src={job.imageSrc}
+                    src={publicAsset(job.imageSrc)}
                     alt={`Logo o imagen de ${job.name}`}
                     fill
                     sizes="(min-width: 768px) 176px, 100vw"

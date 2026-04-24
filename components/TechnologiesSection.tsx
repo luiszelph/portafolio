@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-asset";
 import type { Technology } from "@/lib/portfolio-types";
 
 type TechnologiesSectionProps = {
@@ -40,7 +41,7 @@ export function TechnologiesSection({
               >
                 <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-page p-3 shadow-sm ring-1 ring-line/50 transition-transform duration-300 ease-out hover:scale-[1.15]">
                   <Image
-                    src={tech.imageSrc}
+                    src={publicAsset(tech.imageSrc)}
                     alt={`Icono de ${tech.name}`}
                     width={64}
                     height={64}
