@@ -115,7 +115,7 @@ export const portfolioDataEng: PortfolioData = {
     { name: "React", imageSrc: "/portfolio/technologies/reactjs.png" },
     { name: "Angular", imageSrc: "/portfolio/technologies/angular.png" },
     { name: "C#", imageSrc: "/portfolio/technologies/csharp.png" },
-    { name: "Visual Basic", imageSrc: "/portfolio/technologies/vb.png" },
+    { name: "Next.js", imageSrc: "/portfolio/technologies/nextjs.svg" },
     { name: "SQL", imageSrc: "/portfolio/technologies/sql.png" },
     { name: "JAVA", imageSrc: "/portfolio/technologies/java.png" },
     { name: "NET", imageSrc: "/portfolio/technologies/net.png" },
