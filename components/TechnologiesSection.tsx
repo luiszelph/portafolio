@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { publicAsset } from "@/lib/public-asset";
-import type { Technology } from "@/lib/portfolio-types";
+import type { Technology } from "@/lib/portafolio-types";
 
 type TechnologiesSectionProps = {
   title: string;

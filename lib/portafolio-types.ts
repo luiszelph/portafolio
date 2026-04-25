@@ -40,7 +40,7 @@ export type Project = {
   deployLink: string;
 };
 
-export type PortfolioData = {
+export type PortafolioData = {
   lang: "es" | "en";
   navLinks: NavLink[];
   hero: HeroData;

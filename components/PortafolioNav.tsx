@@ -2,21 +2,21 @@
 
 import { useCallback, useState } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import type { NavLink, PortfolioData } from "@/lib/portfolio-types";
+import type { NavLink, PortafolioData } from "@/lib/portafolio-types";
 
-type PortfolioNavProps = {
+type PortafolioNavProps = {
   navLinks: NavLink[];
-  labels: PortfolioData["labels"];
-  language: PortfolioData["lang"];
-  onLanguageChange: (language: PortfolioData["lang"]) => void;
+  labels: PortafolioData["labels"];
+  language: PortafolioData["lang"];
+  onLanguageChange: (language: PortafolioData["lang"]) => void;
 };
 
-export function PortfolioNav({
+export function PortafolioNav({
   navLinks,
   labels,
   language,
   onLanguageChange,
-}: PortfolioNavProps) {
+}: PortafolioNavProps) {
   const [open, setOpen] = useState(false);
 
   const close = useCallback(() => setOpen(false), []);
@@ -55,7 +55,7 @@ export function PortfolioNav({
             id="language-select"
             value={language}
             onChange={(event) =>
-              onLanguageChange(event.target.value as PortfolioData["lang"])
+              onLanguageChange(event.target.value as PortafolioData["lang"])
             }
             className="h-8 rounded-md border border-line bg-page px-2 text-sm text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             aria-label={labels.language}
@@ -70,7 +70,7 @@ export function PortfolioNav({
             type="button"
             className="inline-flex items-center justify-center rounded-md border border-line p-2 text-ink transition hover:bg-subtle md:hidden dark:hover:bg-raised"
             aria-expanded={open}
-            aria-controls="portfolio-mobile-menu"
+            aria-controls="portafolio-mobile-menu"
             onClick={() => setOpen((v) => !v)}
           >
             <span className="sr-only">
@@ -105,7 +105,7 @@ export function PortfolioNav({
 
       {open ? (
         <div
-          id="portfolio-mobile-menu"
+          id="portafolio-mobile-menu"
           className="border-t border-line bg-page px-4 py-3 md:hidden"
         >
           <nav className="flex flex-col gap-2" aria-label={labels.mobileNav}>

@@ -4,23 +4,23 @@ import { useMemo, useState } from "react";
 import { AboutSection } from "@/components/AboutSection";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { HeroProfile } from "@/components/HeroProfile";
-import { PortfolioNav } from "@/components/PortfolioNav";
+import { PortafolioNav } from "@/components/PortafolioNav";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { TechnologiesSection } from "@/components/TechnologiesSection";
-import { portfolioDataEs } from "@/lib/portfolio-data";
-import { portfolioDataEng } from "@/lib/portfolio-data-eng";
-import type { PortfolioData } from "@/lib/portfolio-types";
+import { portafolioDataEs } from "@/lib/portafolio-data";
+import { portafolioDataEng } from "@/lib/portafolio-data-eng";
+import type { PortafolioData } from "@/lib/portafolio-types";
 
 export default function Home() {
-  const [language, setLanguage] = useState<PortfolioData["lang"]>("es");
+  const [language, setLanguage] = useState<PortafolioData["lang"]>("es");
   const data = useMemo(
-    () => (language === "en" ? portfolioDataEng : portfolioDataEs),
+    () => (language === "en" ? portafolioDataEng : portafolioDataEs),
     [language],
   );
 
   return (
     <div className="flex min-h-full flex-col bg-page text-ink">
-      <PortfolioNav
+      <PortafolioNav
         navLinks={data.navLinks}
         labels={data.labels}
         language={language}

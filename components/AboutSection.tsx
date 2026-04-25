@@ -1,4 +1,4 @@
-import type { AboutData } from "@/lib/portfolio-types";
+import type { AboutData } from "@/lib/portafolio-types";
 
 type AboutSectionProps = {
   about: AboutData;

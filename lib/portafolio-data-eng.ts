@@ -1,9 +1,9 @@
-import type { PortfolioData } from "@/lib/portfolio-types";
+import type { PortafolioData } from "@/lib/portafolio-types";
 
 /** Increase this version when replacing the image file with same name. */
 const HERO_IMAGE_VERSION = "1";
 
-export const portfolioDataEng: PortfolioData = {
+export const portafolioDataEng: PortafolioData = {
   lang: "en",
   navLinks: [
     { href: "#inicio", label: "Home" },
@@ -13,9 +13,9 @@ export const portfolioDataEng: PortfolioData = {
     { href: "#proyectos", label: "Projects" },
   ],
   hero: {
-    kicker: "Portfolio",
+    kicker: "Portafolio",
     headline: "Welcome, my name is Luis Zelph Moreno Ruiz",
-    imageSrc: `/portafolio/developerZelph.png?v=${HERO_IMAGE_VERSION}`,
+    imageSrc: `/developerZelph.png?v=${HERO_IMAGE_VERSION}`,
     imageAlt: "Portrait of Luis Zelph Moreno Ruiz",
   },
   about: {
@@ -61,7 +61,7 @@ export const portfolioDataEng: PortfolioData = {
       ],
       impact:
         "Result: strengthened solid foundations in fullstack development and business logic.",
-      imageSrc: "/portafolio/experiences/rp.png",
+      imageSrc: "/rp.png",
     },
     {
       id: "tdisa",
@@ -75,7 +75,7 @@ export const portfolioDataEng: PortfolioData = {
       ],
       impact:
         "Impact: optimized information flows in medical applications.",
-      imageSrc: "/portafolio/experiences/tdisa.png",
+      imageSrc: "/tdisa.png",
     },
     {
       id: "innatos",
@@ -89,7 +89,7 @@ export const portfolioDataEng: PortfolioData = {
       ],
       impact:
         "Impact: improved user experience and web application performance.",
-      imageSrc: "/portafolio/experiences/innatos.png",
+      imageSrc: "/innatos.png",
     },
     {
       id: "ravisa",
@@ -104,38 +104,38 @@ export const portfolioDataEng: PortfolioData = {
       ],
       impact:
         "Impact: increased operational efficiency and better information control.",
-      imageSrc: "/portafolio/experiences/ravisa.png",
+      imageSrc: "/ravisa.png",
     },
   ],
   technologies: [
-    { name: "JavaScript", imageSrc: "/portafolio/javascript.png" },
-    { name: "CSS", imageSrc: "/portafolio/css.png" },
-    { name: "GitHub", imageSrc: "/portafolio/github.png" },
-    { name: "HTML", imageSrc: "/portafolio/html.png" },
-    { name: "React", imageSrc: "/portafolio/reactjs.png" },
-    { name: "Angular", imageSrc: "/portafolio/angular.png" },
-    { name: "C#", imageSrc: "/portafolio/csharp.png" },
-    { name: "Next.js", imageSrc: "/portafolio/nextjs.svg" },
-    { name: "SQL", imageSrc: "/portafolio/sql.png" },
-    { name: "JAVA", imageSrc: "/portafolio/java.png" },
-    { name: "NET", imageSrc: "/portafolio/net.png" },
-    { name: "MAUI", imageSrc: "/portafolio/maui.png" },
-    { name: "CHATGPT", imageSrc: "/portafolio/chatgpt.png" },
-    { name: "WINDSURF", imageSrc: "/portafolio/windsurf.png" },
-    { name: "CURSOR", imageSrc: "/portafolio/cursor.png" },
+    { name: "JavaScript", imageSrc: "/javascript.png" },
+    { name: "CSS", imageSrc: "/css.png" },
+    { name: "GitHub", imageSrc: "/github.png" },
+    { name: "HTML", imageSrc: "/html.png" },
+    { name: "React", imageSrc: "/reactjs.png" },
+    { name: "Angular", imageSrc: "/angular.png" },
+    { name: "C#", imageSrc: "/csharp.png" },
+    { name: "Next.js", imageSrc: "/nextjs.png" },
+    { name: "SQL", imageSrc: "/sql.png" },
+    { name: "JAVA", imageSrc: "/java.png" },
+    { name: "NET", imageSrc: "/net.png" },
+    { name: "MAUI", imageSrc: "/maui.png" },
+    { name: "CHATGPT", imageSrc: "/chatgpt.png" },
+    { name: "WINDSURF", imageSrc: "/windsurf.png" },
+    { name: "CURSOR", imageSrc: "/cursor.png" },
   ],
   projects: [
     {
       id: "tictactoe",
       description: "My first project built with React: a tic-tac-toe game.",
-      imageSrc: "/portafolio/projectTicTacToe.png",
+      imageSrc: "/projectTicTacToe.png",
       gitHubLink: "https://github.com/luiszelph/tictactoe",
       deployLink: "https://luiszelph.github.io/tictactoe/",
     },
     {
       id: "calculator",
       description: "A small web calculator.",
-      imageSrc: "/portafolio/projectCalculator.png",
+      imageSrc: "/projectCalculator.png",
       gitHubLink: "https://github.com/luiszelph/calculator",
       deployLink: "https://luiszelph.github.io/calculator/",
     },

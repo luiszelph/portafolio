@@ -1,4 +1,4 @@
-import type { PortfolioData } from "@/lib/portfolio-types";
+import type { PortafolioData } from "@/lib/portafolio-types";
 
 const esNavLinks = [
   { href: "#inicio", label: "Inicio" },
@@ -15,7 +15,7 @@ const esHero = {
   kicker: "Portafolio",
   headline:
     "Bienvenidos, mi nombre es Luis Zelph Moreno Ruiz",
-  imageSrc: `/portafolio/developerZelph.png?v=${HERO_IMAGE_VERSION}`,
+  imageSrc: `/developerZelph.png?v=${HERO_IMAGE_VERSION}`,
   imageAlt: "Retrato de Luis Zelph Moreno Ruiz",
 };
 
@@ -39,7 +39,7 @@ const esExperiences = [
     ],
     impact:
       "Resultado: fortalecí bases sólidas en desarrollo fullstack y lógica de negocio.",
-    imageSrc: "/portafolio/experiences/rp.png",
+    imageSrc: "/rp.png",
   },
   {
     id: "tdisa",
@@ -53,7 +53,7 @@ const esExperiences = [
     ],
     impact:
       "Impacto: optimización de flujos de información en aplicaciones médicas.",
-    imageSrc: "/portafolio/experiences/tdisa.png",
+    imageSrc: "/tdisa.png",
   },
   {
     id: "innatos",
@@ -67,7 +67,7 @@ const esExperiences = [
     ],
     impact:
       "Impacto: mejora en la experiencia de usuario y rendimiento de aplicaciones web.",
-    imageSrc: "/portafolio/experiences/innatos.png",
+    imageSrc: "/innatos.png",
   },
   {
     id: "ravisa",
@@ -82,26 +82,26 @@ const esExperiences = [
     ],
     impact:
       "Impacto: incremento en eficiencia operativa y mejor control de información.",
-    imageSrc: "/portafolio/experiences/ravisa.png",
+    imageSrc: "/ravisa.png",
   }
 ] as const;
 
 const esTechnologies = [
-  { name: "JavaScript", imageSrc: "/portafolio/public/javascript.png" },
-  { name: "CSS", imageSrc: "/portafolio/public/css.png" },
-  { name: "GitHub", imageSrc: "/portafolio/public/github.png" },
-  { name: "HTML", imageSrc: "/portafolio/public/html.png" },
-  { name: "React", imageSrc: "/portafolio/public/reactjs.png" },
-  { name: "Angular", imageSrc: "/portafolio/public/angular.png" },
-  { name: "C#", imageSrc: "/portafolio/public/csharp.png" },
-  { name: "Next.js", imageSrc: "/portafolio/public/nextjs.png" },
-  { name: "SQL", imageSrc: "/portafolio/public/sql.png" },
-  { name: "JAVA", imageSrc: "/portafolio/public/java.png" },
-  { name: "NET", imageSrc: "/portafolio/public/net.png" },
-  { name: "MAUI", imageSrc: "/portafolio/public/maui.png" },
-  { name: "CHATGPT", imageSrc: "/portafolio/public/chatgpt.png" },
-  { name: "WINDSURF", imageSrc: "/portafolio/public/windsurf.png" },
-  { name: "CURSOR", imageSrc: "/portafolio/public/cursor.png" },
+  { name: "JavaScript", imageSrc: "/javascript.png" },
+  { name: "CSS", imageSrc: "/css.png" },
+  { name: "GitHub", imageSrc: "/github.png" },
+  { name: "HTML", imageSrc: "/html.png" },
+  { name: "React", imageSrc: "/reactjs.png" },
+  { name: "Angular", imageSrc: "/angular.png" },
+  { name: "C#", imageSrc: "/csharp.png" },
+  { name: "Next.js", imageSrc: "/nextjs.png" },
+  { name: "SQL", imageSrc: "/sql.png" },
+  { name: "JAVA", imageSrc: "/java.png" },
+  { name: "NET", imageSrc: "/net.png" },
+  { name: "MAUI", imageSrc: "/maui.png" },
+  { name: "CHATGPT", imageSrc: "/chatgpt.png" },
+  { name: "WINDSURF", imageSrc: "/windsurf.png" },
+  { name: "CURSOR", imageSrc: "/cursor.png" },
 ] as const;
 
 const esProjects = [
@@ -109,20 +109,20 @@ const esProjects = [
     id: "tictactoe",
     description:
       "Mi primer proyecto realizado en React: un juego de tres en raya.",
-    imageSrc: "/portafolio/projectTicTacToe.png",
+    imageSrc: "/projectTicTacToe.png",
     gitHubLink: "https://github.com/luiszelph/tictactoe",
     deployLink: "https://luiszelph.github.io/tictactoe/",
   },
   {
     id: "calculator",
     description: "Una pequeña calculadora web.",
-    imageSrc: "/portafolio/projectCalculator.png",
+    imageSrc: "/projectCalculator.png",
     gitHubLink: "https://github.com/luiszelph/calculator",
     deployLink: "https://luiszelph.github.io/calculator/",
   },
 ] as const;
 
-export const portfolioDataEs: PortfolioData = {
+export const portafolioDataEs: PortafolioData = {
   lang: "es",
   navLinks: [...esNavLinks],
   hero: { ...esHero },
@@ -156,9 +156,9 @@ export const portfolioDataEs: PortfolioData = {
   projects: [...esProjects],
 };
 
-export const navLinks = portfolioDataEs.navLinks;
-export const hero = portfolioDataEs.hero;
-export const about = portfolioDataEs.about;
-export const technologies = portfolioDataEs.technologies;
-export const projects = portfolioDataEs.projects;
-export const experiences = portfolioDataEs.experiences;
+export const navLinks = portafolioDataEs.navLinks;
+export const hero = portafolioDataEs.hero;
+export const about = portafolioDataEs.about;
+export const technologies = portafolioDataEs.technologies;
+export const projects = portafolioDataEs.projects;
+export const experiences = portafolioDataEs.experiences;

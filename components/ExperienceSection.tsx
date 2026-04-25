@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { publicAsset } from "@/lib/public-asset";
-import type { Experience } from "@/lib/portfolio-types";
+import type { Experience } from "@/lib/portafolio-types";
 
 type ExperienceSectionProps = {
   title: string;

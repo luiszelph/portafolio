@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { publicAsset } from "@/lib/public-asset";
-import type { HeroData } from "@/lib/portfolio-types";
+import type { HeroData } from "@/lib/portafolio-types";
 
 type HeroProfileProps = {
   hero: HeroData;
