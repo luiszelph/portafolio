@@ -87,21 +87,21 @@ const esExperiences = [
 ] as const;
 
 const esTechnologies = [
-  { name: "JavaScript", imageSrc: "/portafolio/technologies/javascript.png" },
-  { name: "CSS", imageSrc: "/portafolio/technologies/css.png" },
-  { name: "GitHub", imageSrc: "/portafolio/technologies/github.png" },
-  { name: "HTML", imageSrc: "/portafolio/technologies/html.png" },
-  { name: "React", imageSrc: "/portafolio/technologies/reactjs.png" },
-  { name: "Angular", imageSrc: "/portafolio/technologies/angular.png" },
-  { name: "C#", imageSrc: "/portafolio/technologies/csharp.png" },
-  { name: "Next.js", imageSrc: "/portafolio/technologies/nextjs.svg" },
-  { name: "SQL", imageSrc: "/portafolio/technologies/sql.png" },
-  { name: "JAVA", imageSrc: "/portafolio/technologies/java.png" },
-  { name: "NET", imageSrc: "/portafolio/technologies/net.png" },
-  { name: "MAUI", imageSrc: "/portafolio/technologies/maui.png" },
-  { name: "CHATGPT", imageSrc: "/portafolio/technologies/chatgpt.png" },
-  { name: "WINDSURF", imageSrc: "/portafolio/technologies/windsurf.png" },
-  { name: "CURSOR", imageSrc: "/portafolio/technologies/cursor.png" },
+  { name: "JavaScript", imageSrc: "/portafolio/javascript.png" },
+  { name: "CSS", imageSrc: "/portafolio/css.png" },
+  { name: "GitHub", imageSrc: "/portafolio/github.png" },
+  { name: "HTML", imageSrc: "/portafolio/html.png" },
+  { name: "React", imageSrc: "/portafolio/reactjs.png" },
+  { name: "Angular", imageSrc: "/portafolio/angular.png" },
+  { name: "C#", imageSrc: "/portafolio/csharp.png" },
+  { name: "Next.js", imageSrc: "/portafolio/nextjs.svg" },
+  { name: "SQL", imageSrc: "/portafolio/sql.png" },
+  { name: "JAVA", imageSrc: "/portafolio/java.png" },
+  { name: "NET", imageSrc: "/portafolio/net.png" },
+  { name: "MAUI", imageSrc: "/portafolio/maui.png" },
+  { name: "CHATGPT", imageSrc: "/portafolio/chatgpt.png" },
+  { name: "WINDSURF", imageSrc: "/portafolio/windsurf.png" },
+  { name: "CURSOR", imageSrc: "/portafolio/cursor.png" },
 ] as const;
 
 const esProjects = [
