@@ -9,14 +9,16 @@ const basePath = process.env.BASE_PATH?.trim() || "";
 
 const nextConfig: NextConfig = {
   output: "export",
-  ...(basePath ? { basePath } : {}),
+
+  ...(basePath
+    ? {
+        basePath,
+        assetPrefix: basePath,
+      }
+    : {}),
+
   images: {
     unoptimized: true,
-    localPatterns: [
-      { pathname: "/portafolio/**" },
-      /** Con `basePath`, `publicAsset()` genera `/[basePath]/portafolio/...`. */
-      { pathname: "/*/portafolio/**" },
-    ],
   },
 };
 
