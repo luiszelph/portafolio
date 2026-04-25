@@ -87,21 +87,21 @@ const esExperiences = [
 ] as const;
 
 const esTechnologies = [
-  { name: "JavaScript", imageSrc: "/portafolio/javascript.png" },
-  { name: "CSS", imageSrc: "/portafolio/css.png" },
-  { name: "GitHub", imageSrc: "/portafolio/github.png" },
-  { name: "HTML", imageSrc: "/portafolio/html.png" },
-  { name: "React", imageSrc: "/portafolio/reactjs.png" },
-  { name: "Angular", imageSrc: "/portafolio/angular.png" },
-  { name: "C#", imageSrc: "/portafolio/csharp.png" },
-  { name: "Next.js", imageSrc: "/portafolio/nextjs.svg" },
-  { name: "SQL", imageSrc: "/portafolio/sql.png" },
-  { name: "JAVA", imageSrc: "/portafolio/java.png" },
-  { name: "NET", imageSrc: "/portafolio/net.png" },
-  { name: "MAUI", imageSrc: "/portafolio/maui.png" },
-  { name: "CHATGPT", imageSrc: "/portafolio/chatgpt.png" },
-  { name: "WINDSURF", imageSrc: "/portafolio/windsurf.png" },
-  { name: "CURSOR", imageSrc: "/portafolio/cursor.png" },
+  { name: "JavaScript", imageSrc: "/portafolio/public/javascript.png" },
+  { name: "CSS", imageSrc: "/portafolio/public/css.png" },
+  { name: "GitHub", imageSrc: "/portafolio/public/github.png" },
+  { name: "HTML", imageSrc: "/portafolio/public/html.png" },
+  { name: "React", imageSrc: "/portafolio/public/reactjs.png" },
+  { name: "Angular", imageSrc: "/portafolio/public/angular.png" },
+  { name: "C#", imageSrc: "/portafolio/public/csharp.png" },
+  { name: "Next.js", imageSrc: "/portafolio/public/nextjs.png" },
+  { name: "SQL", imageSrc: "/portafolio/public/sql.png" },
+  { name: "JAVA", imageSrc: "/portafolio/public/java.png" },
+  { name: "NET", imageSrc: "/portafolio/public/net.png" },
+  { name: "MAUI", imageSrc: "/portafolio/public/maui.png" },
+  { name: "CHATGPT", imageSrc: "/portafolio/public/chatgpt.png" },
+  { name: "WINDSURF", imageSrc: "/portafolio/public/windsurf.png" },
+  { name: "CURSOR", imageSrc: "/portafolio/public/cursor.png" },
 ] as const;
 
 const esProjects = [
