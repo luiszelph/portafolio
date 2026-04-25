@@ -13,9 +13,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
     localPatterns: [
-      { pathname: "/portfolio/**" },
-      /** Con `basePath`, `publicAsset()` genera `/[basePath]/portfolio/...`. */
-      { pathname: "/*/portfolio/**" },
+      { pathname: "/portafolio/**" },
+      /** Con `basePath`, `publicAsset()` genera `/[basePath]/portafolio/...`. */
+      { pathname: "/*/portafolio/**" },
     ],
   },
 };

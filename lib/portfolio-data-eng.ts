@@ -15,7 +15,7 @@ export const portfolioDataEng: PortfolioData = {
   hero: {
     kicker: "Portfolio",
     headline: "Welcome, my name is Luis Zelph Moreno Ruiz",
-    imageSrc: `/portfolio/developerZelph.png?v=${HERO_IMAGE_VERSION}`,
+    imageSrc: `/portafolio/developerZelph.png?v=${HERO_IMAGE_VERSION}`,
     imageAlt: "Portrait of Luis Zelph Moreno Ruiz",
   },
   about: {
@@ -61,7 +61,7 @@ export const portfolioDataEng: PortfolioData = {
       ],
       impact:
         "Result: strengthened solid foundations in fullstack development and business logic.",
-      imageSrc: "/portfolio/experiences/rp.png",
+      imageSrc: "/portafolio/experiences/rp.png",
     },
     {
       id: "tdisa",
@@ -75,7 +75,7 @@ export const portfolioDataEng: PortfolioData = {
       ],
       impact:
         "Impact: optimized information flows in medical applications.",
-      imageSrc: "/portfolio/experiences/tdisa.png",
+      imageSrc: "/portafolio/experiences/tdisa.png",
     },
     {
       id: "innatos",
@@ -89,7 +89,7 @@ export const portfolioDataEng: PortfolioData = {
       ],
       impact:
         "Impact: improved user experience and web application performance.",
-      imageSrc: "/portfolio/experiences/innatos.png",
+      imageSrc: "/portafolio/experiences/innatos.png",
     },
     {
       id: "ravisa",
@@ -104,38 +104,38 @@ export const portfolioDataEng: PortfolioData = {
       ],
       impact:
         "Impact: increased operational efficiency and better information control.",
-      imageSrc: "/portfolio/experiences/ravisa.png",
+      imageSrc: "/portafolio/experiences/ravisa.png",
     },
   ],
   technologies: [
-    { name: "JavaScript", imageSrc: "/portfolio/technologies/javascript.png" },
-    { name: "CSS", imageSrc: "/portfolio/technologies/css.png" },
-    { name: "GitHub", imageSrc: "/portfolio/technologies/github.png" },
-    { name: "HTML", imageSrc: "/portfolio/technologies/html.png" },
-    { name: "React", imageSrc: "/portfolio/technologies/reactjs.png" },
-    { name: "Angular", imageSrc: "/portfolio/technologies/angular.png" },
-    { name: "C#", imageSrc: "/portfolio/technologies/csharp.png" },
-    { name: "Next.js", imageSrc: "/portfolio/technologies/nextjs.svg" },
-    { name: "SQL", imageSrc: "/portfolio/technologies/sql.png" },
-    { name: "JAVA", imageSrc: "/portfolio/technologies/java.png" },
-    { name: "NET", imageSrc: "/portfolio/technologies/net.png" },
-    { name: "MAUI", imageSrc: "/portfolio/technologies/maui.png" },
-    { name: "CHATGPT", imageSrc: "/portfolio/technologies/chatgpt.png" },
-    { name: "WINDSURF", imageSrc: "/portfolio/technologies/windsurf.png" },
-    { name: "CURSOR", imageSrc: "/portfolio/technologies/cursor.png" },
+    { name: "JavaScript", imageSrc: "/portafolio/technologies/javascript.png" },
+    { name: "CSS", imageSrc: "/portafolio/technologies/css.png" },
+    { name: "GitHub", imageSrc: "/portafolio/technologies/github.png" },
+    { name: "HTML", imageSrc: "/portafolio/technologies/html.png" },
+    { name: "React", imageSrc: "/portafolio/technologies/reactjs.png" },
+    { name: "Angular", imageSrc: "/portafolio/technologies/angular.png" },
+    { name: "C#", imageSrc: "/portafolio/technologies/csharp.png" },
+    { name: "Next.js", imageSrc: "/portafolio/technologies/nextjs.svg" },
+    { name: "SQL", imageSrc: "/portafolio/technologies/sql.png" },
+    { name: "JAVA", imageSrc: "/portafolio/technologies/java.png" },
+    { name: "NET", imageSrc: "/portafolio/technologies/net.png" },
+    { name: "MAUI", imageSrc: "/portafolio/technologies/maui.png" },
+    { name: "CHATGPT", imageSrc: "/portafolio/technologies/chatgpt.png" },
+    { name: "WINDSURF", imageSrc: "/portafolio/technologies/windsurf.png" },
+    { name: "CURSOR", imageSrc: "/portafolio/technologies/cursor.png" },
   ],
   projects: [
     {
       id: "tictactoe",
       description: "My first project built with React: a tic-tac-toe game.",
-      imageSrc: "/portfolio/projectTicTacToe.png",
+      imageSrc: "/portafolio/projectTicTacToe.png",
       gitHubLink: "https://github.com/luiszelph/tictactoe",
       deployLink: "https://luiszelph.github.io/tictactoe/",
     },
     {
       id: "calculator",
       description: "A small web calculator.",
-      imageSrc: "/portfolio/projectCalculator.png",
+      imageSrc: "/portafolio/projectCalculator.png",
       gitHubLink: "https://github.com/luiszelph/calculator",
       deployLink: "https://luiszelph.github.io/calculator/",
     },
