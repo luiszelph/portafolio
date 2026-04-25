@@ -9,5 +9,8 @@ export function publicAsset(path: string): string {
   const normalized = path.startsWith("/") ? path : `/${path}`;
   if (!base) return normalized;
   const prefix = base.endsWith("/") ? base.slice(0, -1) : base;
+  if (normalized === prefix || normalized.startsWith(`${prefix}/`)) {
+    return normalized;
+  }
   return `${prefix}${normalized}`;
 }
