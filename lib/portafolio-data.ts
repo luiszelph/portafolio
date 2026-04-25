@@ -1,4 +1,5 @@
 import type { PortafolioData } from "@/lib/portafolio-types";
+import { publicAsset } from "@/lib/public-asset";
 
 const esNavLinks = [
   { href: "#inicio", label: "Inicio" },
@@ -8,14 +9,13 @@ const esNavLinks = [
   { href: "#proyectos", label: "Proyectos" },
 ] as const;
 
-/** Sube este número cuando reemplaces la imagen en disco pero mantengas el mismo nombre de archivo (rompe caché del navegador y de `next/image`). */
+/** Sube este número cuando reemplaces la imagen en disco pero mantengas el mismo nombre de archivo */
 const HERO_IMAGE_VERSION = "1";
 
 const esHero = {
   kicker: "Portafolio",
-  headline:
-    "Bienvenidos, mi nombre es Luis Zelph Moreno Ruiz",
-  imageSrc: `/developerZelph.png?v=${HERO_IMAGE_VERSION}`,
+  headline: "Bienvenidos, mi nombre es Luis Zelph Moreno Ruiz",
+  imageSrc: publicAsset(`/developerZelph.png?v=${HERO_IMAGE_VERSION}`),
   imageAlt: "Retrato de Luis Zelph Moreno Ruiz",
 };
 
@@ -39,7 +39,7 @@ const esExperiences = [
     ],
     impact:
       "Resultado: fortalecí bases sólidas en desarrollo fullstack y lógica de negocio.",
-    imageSrc: "/rp.png",
+    imageSrc: publicAsset("rp.png"),
   },
   {
     id: "tdisa",
@@ -53,7 +53,7 @@ const esExperiences = [
     ],
     impact:
       "Impacto: optimización de flujos de información en aplicaciones médicas.",
-    imageSrc: "/tdisa.png",
+    imageSrc: publicAsset("tdisa.png"),
   },
   {
     id: "innatos",
@@ -67,7 +67,7 @@ const esExperiences = [
     ],
     impact:
       "Impacto: mejora en la experiencia de usuario y rendimiento de aplicaciones web.",
-    imageSrc: "/innatos.png",
+    imageSrc: publicAsset("innatos.png"),
   },
   {
     id: "ravisa",
@@ -82,26 +82,26 @@ const esExperiences = [
     ],
     impact:
       "Impacto: incremento en eficiencia operativa y mejor control de información.",
-    imageSrc: "/ravisa.png",
-  }
+    imageSrc: publicAsset("ravisa.png"),
+  },
 ] as const;
 
 const esTechnologies = [
-  { name: "JavaScript", imageSrc: "javascript.png" },
-  { name: "CSS", imageSrc: "css.png" },
-  { name: "GitHub", imageSrc: "github.png" },
-  { name: "HTML", imageSrc: "html.png" },
-  { name: "React", imageSrc: "reactjs.png" },
-  { name: "Angular", imageSrc: "angular.png" },
-  { name: "C#", imageSrc: "csharp.png" },
-  { name: "Next.js", imageSrc: "nextjs.png" },
-  { name: "SQL", imageSrc: "sql.png" },
-  { name: "JAVA", imageSrc: "java.png" },
-  { name: "NET", imageSrc: "net.png" },
-  { name: "MAUI", imageSrc: "maui.png" },
-  { name: "CHATGPT", imageSrc: "chatgpt.png" },
-  { name: "WINDSURF", imageSrc: "windsurf.png" },
-  { name: "CURSOR", imageSrc: "cursor.png" },
+  { name: "JavaScript", imageSrc: publicAsset("javascript.png") },
+  { name: "CSS", imageSrc: publicAsset("css.png") },
+  { name: "GitHub", imageSrc: publicAsset("github.png") },
+  { name: "HTML", imageSrc: publicAsset("html.png") },
+  { name: "React", imageSrc: publicAsset("reactjs.png") },
+  { name: "Angular", imageSrc: publicAsset("angular.png") },
+  { name: "C#", imageSrc: publicAsset("csharp.png") },
+  { name: "Next.js", imageSrc: publicAsset("nextjs.png") },
+  { name: "SQL", imageSrc: publicAsset("sql.png") },
+  { name: "JAVA", imageSrc: publicAsset("java.png") },
+  { name: "NET", imageSrc: publicAsset("net.png") },
+  { name: "MAUI", imageSrc: publicAsset("maui.png") },
+  { name: "CHATGPT", imageSrc: publicAsset("chatgpt.png") },
+  { name: "WINDSURF", imageSrc: publicAsset("windsurf.png") },
+  { name: "CURSOR", imageSrc: publicAsset("cursor.png") },
 ] as const;
 
 const esProjects = [
@@ -109,14 +109,14 @@ const esProjects = [
     id: "tictactoe",
     description:
       "Mi primer proyecto realizado en React: un juego de tres en raya.",
-    imageSrc: "/projectTicTacToe.png",
+    imageSrc: publicAsset("projectTicTacToe.png"),
     gitHubLink: "https://github.com/luiszelph/tictactoe",
     deployLink: "https://luiszelph.github.io/tictactoe/",
   },
   {
     id: "calculator",
     description: "Una pequeña calculadora web.",
-    imageSrc: "/projectCalculator.png",
+    imageSrc: publicAsset("projectCalculator.png"),
     gitHubLink: "https://github.com/luiszelph/calculator",
     deployLink: "https://luiszelph.github.io/calculator/",
   },
@@ -135,8 +135,10 @@ export const portafolioDataEs: PortafolioData = {
   },
   sectionDescriptions: {
     experience: "Resumen de colaboraciones y aprendizajes en proyectos web.",
-    technologies: "Herramientas y lenguajes con los que he trabajado en proyectos web.",
-    projects: "Algunos trabajos personales con enlace al repositorio y despliegue.",
+    technologies:
+      "Herramientas y lenguajes con los que he trabajado en proyectos web.",
+    projects:
+      "Algunos trabajos personales con enlace al repositorio y despliegue.",
   },
   actions: {
     visitSite: "Visitar sitio",

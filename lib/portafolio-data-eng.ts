@@ -1,4 +1,5 @@
 import type { PortafolioData } from "@/lib/portafolio-types";
+import { publicAsset } from "@/lib/public-asset";
 
 /** Increase this version when replacing the image file with same name. */
 const HERO_IMAGE_VERSION = "1";
@@ -15,7 +16,7 @@ export const portafolioDataEng: PortafolioData = {
   hero: {
     kicker: "Portafolio",
     headline: "Welcome, my name is Luis Zelph Moreno Ruiz",
-    imageSrc: `/developerZelph.png?v=${HERO_IMAGE_VERSION}`,
+    imageSrc: publicAsset(`/developerZelph.png?v=${HERO_IMAGE_VERSION}`),
     imageAlt: "Portrait of Luis Zelph Moreno Ruiz",
   },
   about: {
@@ -61,7 +62,7 @@ export const portafolioDataEng: PortafolioData = {
       ],
       impact:
         "Result: strengthened solid foundations in fullstack development and business logic.",
-      imageSrc: "/rp.png",
+      imageSrc: publicAsset("rp.png"),
     },
     {
       id: "tdisa",
@@ -73,9 +74,8 @@ export const portafolioDataEng: PortafolioData = {
         "Implemented backend logic in C# and SQL Server queries.",
         "Collaborated on internal process improvements through digital tools.",
       ],
-      impact:
-        "Impact: optimized information flows in medical applications.",
-      imageSrc: "/tdisa.png",
+      impact: "Impact: optimized information flows in medical applications.",
+      imageSrc: publicAsset("tdisa.png"),
     },
     {
       id: "innatos",
@@ -89,7 +89,7 @@ export const portafolioDataEng: PortafolioData = {
       ],
       impact:
         "Impact: improved user experience and web application performance.",
-      imageSrc: "/innatos.png",
+      imageSrc: publicAsset("innatos.png"),
     },
     {
       id: "ravisa",
@@ -104,38 +104,38 @@ export const portafolioDataEng: PortafolioData = {
       ],
       impact:
         "Impact: increased operational efficiency and better information control.",
-      imageSrc: "/ravisa.png",
+      imageSrc: publicAsset("ravisa.png"),
     },
   ],
   technologies: [
-    { name: "JavaScript", imageSrc: "javascript.png" },
-    { name: "CSS", imageSrc: "css.png" },
-    { name: "GitHub", imageSrc: "github.png" },
-    { name: "HTML", imageSrc: "html.png" },
-    { name: "React", imageSrc: "reactjs.png" },
-    { name: "Angular", imageSrc: "angular.png" },
-    { name: "C#", imageSrc: "csharp.png" },
-    { name: "Next.js", imageSrc: "nextjs.png" },
-    { name: "SQL", imageSrc: "sql.png" },
-    { name: "JAVA", imageSrc: "java.png" },
-    { name: "NET", imageSrc: "net.png" },
-    { name: "MAUI", imageSrc: "maui.png" },
-    { name: "CHATGPT", imageSrc: "chatgpt.png" },
-    { name: "WINDSURF", imageSrc: "windsurf.png" },
-    { name: "CURSOR", imageSrc: "cursor.png" },
+    { name: "JavaScript", imageSrc: publicAsset("javascript.png") },
+    { name: "CSS", imageSrc: publicAsset("css.png") },
+    { name: "GitHub", imageSrc: publicAsset("github.png") },
+    { name: "HTML", imageSrc: publicAsset("html.png") },
+    { name: "React", imageSrc: publicAsset("reactjs.png") },
+    { name: "Angular", imageSrc: publicAsset("angular.png") },
+    { name: "C#", imageSrc: publicAsset("csharp.png") },
+    { name: "Next.js", imageSrc: publicAsset("nextjs.png") },
+    { name: "SQL", imageSrc: publicAsset("sql.png") },
+    { name: "JAVA", imageSrc: publicAsset("java.png") },
+    { name: "NET", imageSrc: publicAsset("net.png") },
+    { name: "MAUI", imageSrc: publicAsset("maui.png") },
+    { name: "CHATGPT", imageSrc: publicAsset("chatgpt.png") },
+    { name: "WINDSURF", imageSrc: publicAsset("windsurf.png") },
+    { name: "CURSOR", imageSrc: publicAsset("cursor.png") },
   ],
   projects: [
     {
       id: "tictactoe",
       description: "My first project built with React: a tic-tac-toe game.",
-      imageSrc: "/projectTicTacToe.png",
+      imageSrc: publicAsset("projectTicTacToe.png"),
       gitHubLink: "https://github.com/luiszelph/tictactoe",
       deployLink: "https://luiszelph.github.io/tictactoe/",
     },
     {
       id: "calculator",
       description: "A small web calculator.",
-      imageSrc: "/projectCalculator.png",
+      imageSrc: publicAsset("projectCalculator.png"),
       gitHubLink: "https://github.com/luiszelph/calculator",
       deployLink: "https://luiszelph.github.io/calculator/",
     },
