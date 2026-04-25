@@ -87,21 +87,21 @@ const esExperiences = [
 ] as const;
 
 const esTechnologies = [
-  { name: "JavaScript", imageSrc: "/javascript.png" },
-  { name: "CSS", imageSrc: "/css.png" },
-  { name: "GitHub", imageSrc: "/github.png" },
-  { name: "HTML", imageSrc: "/html.png" },
-  { name: "React", imageSrc: "/reactjs.png" },
-  { name: "Angular", imageSrc: "/angular.png" },
-  { name: "C#", imageSrc: "/csharp.png" },
-  { name: "Next.js", imageSrc: "/nextjs.png" },
-  { name: "SQL", imageSrc: "/sql.png" },
-  { name: "JAVA", imageSrc: "/java.png" },
-  { name: "NET", imageSrc: "/net.png" },
-  { name: "MAUI", imageSrc: "/maui.png" },
-  { name: "CHATGPT", imageSrc: "/chatgpt.png" },
-  { name: "WINDSURF", imageSrc: "/windsurf.png" },
-  { name: "CURSOR", imageSrc: "/cursor.png" },
+  { name: "JavaScript", imageSrc: "javascript.png" },
+  { name: "CSS", imageSrc: "css.png" },
+  { name: "GitHub", imageSrc: "github.png" },
+  { name: "HTML", imageSrc: "html.png" },
+  { name: "React", imageSrc: "reactjs.png" },
+  { name: "Angular", imageSrc: "angular.png" },
+  { name: "C#", imageSrc: "csharp.png" },
+  { name: "Next.js", imageSrc: "nextjs.png" },
+  { name: "SQL", imageSrc: "sql.png" },
+  { name: "JAVA", imageSrc: "java.png" },
+  { name: "NET", imageSrc: "net.png" },
+  { name: "MAUI", imageSrc: "maui.png" },
+  { name: "CHATGPT", imageSrc: "chatgpt.png" },
+  { name: "WINDSURF", imageSrc: "windsurf.png" },
+  { name: "CURSOR", imageSrc: "cursor.png" },
 ] as const;
 
 const esProjects = [
