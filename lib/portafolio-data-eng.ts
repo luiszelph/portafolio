@@ -65,7 +65,7 @@ export const portafolioDataEng: PortafolioData = {
     },
     {
       id: "tdisa",
-      name: "🏥 TDI",
+      name: "TDI",
       role: "Junior Web Developer",
       period: "August 2022 – December 2022",
       highlights: [
@@ -79,7 +79,7 @@ export const portafolioDataEng: PortafolioData = {
     },
     {
       id: "innatos",
-      name: "💻 Innatos",
+      name: "Innatos",
       role: "Frontend / Fullstack Developer",
       period: "January 2023 – November 2023",
       highlights: [
@@ -93,7 +93,7 @@ export const portafolioDataEng: PortafolioData = {
     },
     {
       id: "ravisa",
-      name: "🏢 Ravisa",
+      name: "Ravisa",
       role: "Fullstack Developer (.NET)",
       period: "June 2024 – November 2025",
       highlights: [
