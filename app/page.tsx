@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { AboutSection } from "@/components/AboutSection";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { HeroProfile } from "@/components/HeroProfile";
+import { MirrorCubeBackground } from "@/components/MirrorCubeBackground";
 import { PortafolioNav } from "@/components/PortafolioNav";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { TechnologiesSection } from "@/components/TechnologiesSection";
@@ -19,14 +20,15 @@ export default function Home() {
   );
 
   return (
-    <div className="flex min-h-full flex-col bg-page text-ink">
+    <div className="relative isolate flex min-h-full flex-col overflow-hidden bg-page text-ink">
+      <MirrorCubeBackground />
       <PortafolioNav
         navLinks={data.navLinks}
         labels={data.labels}
         language={language}
         onLanguageChange={setLanguage}
       />
-      <main className="flex-1">
+      <main className="relative z-10 flex-1">
         <HeroProfile hero={data.hero} />
         <AboutSection about={data.about} title={data.sectionTitles.about} />
         <ExperienceSection

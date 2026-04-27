@@ -92,3 +92,329 @@ body {
     transparent 100%
   );
 }
+
+@keyframes mirror-cube-float-a {
+  0% {
+    transform: translate(8vw, 10vh);
+  }
+  20% {
+    transform: translate(70vw, 16vh);
+  }
+  40% {
+    transform: translate(74vw, 65vh);
+  }
+  60% {
+    transform: translate(20vw, 72vh);
+  }
+  80% {
+    transform: translate(10vw, 42vh);
+  }
+  100% {
+    transform: translate(8vw, 10vh);
+  }
+}
+
+@keyframes mirror-cube-float-b {
+  0% {
+    transform: translate(82vw, 78vh);
+  }
+  25% {
+    transform: translate(12vw, 62vh);
+  }
+  50% {
+    transform: translate(28vw, 8vh);
+  }
+  75% {
+    transform: translate(88vw, 22vh);
+  }
+  100% {
+    transform: translate(82vw, 78vh);
+  }
+}
+
+@keyframes mirror-cube-float-c {
+  0% {
+    transform: translate(5vw, 45vh);
+  }
+  33% {
+    transform: translate(55vw, 12vh);
+  }
+  66% {
+    transform: translate(92vw, 58vh);
+  }
+  100% {
+    transform: translate(5vw, 45vh);
+  }
+}
+
+@keyframes mirror-cube-float-d {
+  0% {
+    transform: translate(40vw, 85vh);
+  }
+  20% {
+    transform: translate(78vw, 48vh);
+  }
+  45% {
+    transform: translate(52vw, 6vh);
+  }
+  70% {
+    transform: translate(8vw, 38vh);
+  }
+  100% {
+    transform: translate(40vw, 85vh);
+  }
+}
+
+@keyframes mirror-cube-float-e {
+  0% {
+    transform: translate(65vw, 8vh);
+  }
+  30% {
+    transform: translate(18vw, 28vh);
+  }
+  55% {
+    transform: translate(42vw, 88vh);
+  }
+  80% {
+    transform: translate(90vw, 52vh);
+  }
+  100% {
+    transform: translate(65vw, 8vh);
+  }
+}
+
+@keyframes mirror-cube-float-f {
+  0% {
+    transform: translate(22vw, 18vh);
+  }
+  25% {
+    transform: translate(68vw, 38vh);
+  }
+  50% {
+    transform: translate(48vw, 72vh);
+  }
+  75% {
+    transform: translate(14vw, 58vh);
+  }
+  100% {
+    transform: translate(22vw, 18vh);
+  }
+}
+
+@keyframes mirror-cube-spin {
+  0% {
+    transform: rotateX(-18deg) rotateY(0deg) rotateZ(8deg);
+  }
+  50% {
+    transform: rotateX(22deg) rotateY(180deg) rotateZ(-6deg);
+  }
+  100% {
+    transform: rotateX(-18deg) rotateY(360deg) rotateZ(8deg);
+  }
+}
+
+.mirror-cube-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  --cube-half-base: 5rem;
+  --cube-half: var(--cube-half-base);
+  --spin-duration: 7s;
+  width: calc(var(--cube-half) * 2);
+  height: calc(var(--cube-half) * 2);
+  transform-style: preserve-3d;
+  will-change: transform;
+  animation-name: mirror-cube-float-a;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 26s;
+  opacity: 0.46;
+}
+
+/* Cubos más pequeños compartiendo diseño mirror 3×3 */
+.mirror-cube-wrapper--main {
+  --cube-half-base: 5rem;
+  opacity: 0.46;
+}
+
+.mirror-cube-wrapper--md {
+  --cube-half-base: 2.35rem;
+  opacity: 0.32;
+}
+
+.mirror-cube-wrapper--sm {
+  --cube-half-base: 1.45rem;
+  opacity: 0.26;
+}
+
+.mirror-cube-wrapper--xs {
+  --cube-half-base: 0.92rem;
+  opacity: 0.2;
+}
+
+/* Trayectorias independientes (“rebotes” por la pantalla) */
+.mirror-cube-path-a {
+  animation-name: mirror-cube-float-a;
+}
+
+.mirror-cube-path-b {
+  animation-name: mirror-cube-float-b;
+}
+
+.mirror-cube-path-c {
+  animation-name: mirror-cube-float-c;
+}
+
+.mirror-cube-path-d {
+  animation-name: mirror-cube-float-d;
+}
+
+.mirror-cube-path-e {
+  animation-name: mirror-cube-float-e;
+}
+
+.mirror-cube-path-f {
+  animation-name: mirror-cube-float-f;
+}
+
+.mirror-cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: mirror-cube-spin var(--spin-duration) ease-in-out infinite;
+}
+
+.mirror-cube-spin--slow {
+  --spin-duration: 11s;
+}
+
+.mirror-cube-spin--fast {
+  --spin-duration: 5s;
+}
+
+.mirror-cube-spin--reverse {
+  animation-direction: reverse;
+}
+
+/* Shell: posición 3D de cada cara */
+.mirror-cube-face-shell {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+}
+
+/* Rejilla 3×3 estilo Mirror Cube: cortes NO centrados (capa superior fina, inferior más alta; columnas irregulares). */
+.mirror-cube-face-grid {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  border-radius: 0.45rem;
+  border: 1px solid #1a1a1a;
+  background: #050505;
+  display: grid;
+  grid-template-columns: 0.26fr 0.34fr 0.4fr;
+  grid-template-rows: 0.14fr 0.36fr 0.5fr;
+  gap: 3px;
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, #ffffff 12%, transparent),
+    inset 0 0 1rem color-mix(in srgb, #ffffff 8%, transparent);
+}
+
+/* Celda metal mirror plateada */
+.mirror-cube-cell {
+  display: block;
+  min-height: 0;
+  min-width: 0;
+  border-radius: 0.12rem;
+  background:
+    linear-gradient(
+      165deg,
+      #f5f7f9 0%,
+      #b8c0ca 38%,
+      #8e97a3 52%,
+      #d8dde3 78%,
+      #eef1f4 100%
+    );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.35),
+    inset 2px 2px 8px rgba(255, 255, 255, 0.12);
+}
+
+/* Variación entre piezas (distintos bloques del bump cube). */
+.mirror-cube-cell[data-cell="0"],
+.mirror-cube-cell[data-cell="2"],
+.mirror-cube-cell[data-cell="6"],
+.mirror-cube-cell[data-cell="8"] {
+  background: linear-gradient(
+    148deg,
+    #ffffff 0%,
+    #c5ccd4 42%,
+    #7a8490 55%,
+    #e2e6eb 100%
+  );
+}
+
+.mirror-cube-cell[data-cell="3"],
+.mirror-cube-cell[data-cell="5"] {
+  background: linear-gradient(
+    195deg,
+    #e9edf1 0%,
+    #9aa3ae 45%,
+    #b4bcc6 100%
+  );
+}
+
+.mirror-cube-front {
+  transform: translateZ(var(--cube-half));
+}
+
+.mirror-cube-back {
+  transform: rotateY(180deg) translateZ(var(--cube-half));
+}
+
+.mirror-cube-right {
+  transform: rotateY(90deg) translateZ(var(--cube-half));
+}
+
+.mirror-cube-left {
+  transform: rotateY(-90deg) translateZ(var(--cube-half));
+}
+
+.mirror-cube-top {
+  transform: rotateX(90deg) translateZ(var(--cube-half));
+}
+
+.mirror-cube-bottom {
+  transform: rotateX(-90deg) translateZ(var(--cube-half));
+}
+
+@media (max-width: 768px) {
+  .mirror-cube-wrapper {
+    --cube-half: calc(var(--cube-half-base) * 0.75);
+    animation-duration: 22s;
+  }
+
+  .mirror-cube-wrapper--main {
+    opacity: 0.34;
+  }
+
+  .mirror-cube-wrapper--md {
+    opacity: 0.28;
+  }
+
+  .mirror-cube-wrapper--sm,
+  .mirror-cube-wrapper--xs {
+    opacity: 0.22;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mirror-cube-wrapper,
+  .mirror-cube {
+    animation: none;
+  }
+}
