@@ -5,7 +5,10 @@ import type { NextConfig } from "next";
  * En GitHub Actions se define para sitios de proyecto.
  * Usa también `NEXT_PUBLIC_BASE_PATH` con el mismo valor para `publicAsset()` (next/image no aplica basePath solo).
  */
-const basePath = process.env.BASE_PATH?.trim() || "";
+const basePath =
+  process.env.BASE_PATH?.trim() ||
+  process.env.NEXT_PUBLIC_BASE_PATH?.trim() ||
+  "";
 
 const nextConfig: NextConfig = {
   output: "export",

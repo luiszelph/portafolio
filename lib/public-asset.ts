@@ -5,7 +5,10 @@
  * @see https://nextjs.org/docs/app/api-reference/config/next-config-js/basePath#images
  */
 export function publicAsset(path: string): string {
-  const base = process.env.NEXT_PUBLIC_BASE_PATH?.trim() ?? "";
+  const base =
+    process.env.NEXT_PUBLIC_BASE_PATH?.trim() ||
+    process.env.BASE_PATH?.trim() ||
+    "";
   const normalized = path.startsWith("/") ? path : `/${path}`;
   if (!base) return normalized;
   const prefix = base.endsWith("/") ? base.slice(0, -1) : base;
