@@ -5,9 +5,11 @@
  * @see https://nextjs.org/docs/app/api-reference/config/next-config-js/basePath#images
  */
 export function publicAsset(path: string): string {
+  const productionFallbackBasePath = "/portafolio";
   const base =
     process.env.NEXT_PUBLIC_BASE_PATH?.trim() ||
     process.env.BASE_PATH?.trim() ||
+    (process.env.NODE_ENV === "production" ? productionFallbackBasePath : "") ||
     "";
   const normalized = path.startsWith("/") ? path : `/${path}`;
   if (!base) return normalized;
