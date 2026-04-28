@@ -36,8 +36,9 @@ export type Project = {
   id: string;
   description: string;
   imageSrc: string;
-  gitHubLink: string;
-  deployLink: string;
+  imageGallery?: readonly string[];
+  gitHubLink?: string;
+  deployLink?: string;
 };
 
 export type PortafolioData = {

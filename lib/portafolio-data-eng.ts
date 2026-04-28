@@ -139,5 +139,29 @@ export const portafolioDataEng: PortafolioData = {
       gitHubLink: "https://github.com/luiszelph/calculator",
       deployLink: "https://luiszelph.github.io/calculator/",
     },
+    {
+      id: "web-store",
+      description:
+        "Web Store, interface and feature development for online purchases.",
+      imageSrc: publicAsset("portafolio/tw_1.jpeg"),
+      imageGallery: [
+        publicAsset("portafolio/tw_1.jpeg"),
+        publicAsset("portafolio/tw_2.jpeg"),
+        publicAsset("portafolio/tw_3.jpeg"),
+        publicAsset("portafolio/tw_4.jpeg"),
+      ],
+    },
+    {
+      id: "hermes-system",
+      description:
+        "Hermes System, interface and feature development for collection administration.",
+      imageSrc: publicAsset("portafolio/hermes_1.jpeg"),
+      imageGallery: [
+        publicAsset("portafolio/hermes_1.jpeg"),
+        publicAsset("portafolio/hermes_2.jpeg"),
+        publicAsset("portafolio/hermes_3.jpeg"),
+        publicAsset("portafolio/hermes_4.jpeg"),
+      ],
+    },
   ],
 };

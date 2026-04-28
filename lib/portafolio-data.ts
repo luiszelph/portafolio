@@ -120,6 +120,30 @@ const esProjects = [
     gitHubLink: "https://github.com/luiszelph/calculator",
     deployLink: "https://luiszelph.github.io/calculator/",
   },
+  {
+    id: "tienda-web",
+    description:
+      "Tienda Web, desarrollo de interfaces y funcionalidades para realizar compras en linea.",
+    imageSrc: publicAsset("portafolio/tw_1.jpeg"),
+    imageGallery: [
+      publicAsset("portafolio/tw_1.jpeg"),
+      publicAsset("portafolio/tw_2.jpeg"),
+      publicAsset("portafolio/tw_3.jpeg"),
+      publicAsset("portafolio/tw_4.jpeg"),
+    ],
+  },
+  {
+    id: "sistema-hermes",
+    description:
+      "Sistema Hermes, desarrollo de interfaces y funcionalidades para la administración cobranza.",
+    imageSrc: publicAsset("portafolio/hermes_1.jpeg"),
+    imageGallery: [
+      publicAsset("portafolio/hermes_1.jpeg"),
+      publicAsset("portafolio/hermes_2.jpeg"),
+      publicAsset("portafolio/hermes_3.jpeg"),
+      publicAsset("portafolio/hermes_4.jpeg"),
+    ],
+  },
 ] as const;
 
 export const portafolioDataEs: PortafolioData = {
