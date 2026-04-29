@@ -142,7 +142,7 @@ export const portafolioDataEng: PortafolioData = {
     {
       id: "web-store",
       description:
-        "Web Store, interface and feature development for online purchases.",
+        "I am currently working on the development of a web store. Some of the challenges have been building interfaces and features for online purchases, integrating PayPal payments, and managing data. The application uses NopCommerce, so modifying some sections is challenging.",
       imageSrc: publicAsset("portafolio/tw_1.jpeg"),
       imageGallery: [
         publicAsset("portafolio/tw_1.jpeg"),
@@ -154,7 +154,7 @@ export const portafolioDataEng: PortafolioData = {
     {
       id: "hermes-system",
       description:
-        "Hermes System, interface and feature development for collection administration.",
+        "The Hermes System was an application developed in .NET to manage client collections through the administration of supplies, labor, materials, and more. It also included user, role, and permission management, along with report generation for collection management.",
       imageSrc: publicAsset("portafolio/hermes_1.jpeg"),
       imageGallery: [
         publicAsset("portafolio/hermes_1.jpeg"),

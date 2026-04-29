@@ -123,7 +123,7 @@ const esProjects = [
   {
     id: "tienda-web",
     description:
-      "Tienda Web, desarrollo de interfaces y funcionalidades para realizar compras en linea.",
+      "Trabajo actualmente en el desarrollo de una tienda web, algunos de los retos han sido: Elaboración de interfaces y funcionalidades para realizar compras en linea, la integración de pagos con Paypal, la gestión de datos. La aplicación utiliza Nopcommerce por lo cual modificar algunas secciones es un reto.",
     imageSrc: publicAsset("portafolio/tw_1.jpeg"),
     imageGallery: [
       publicAsset("portafolio/tw_1.jpeg"),
@@ -135,7 +135,7 @@ const esProjects = [
   {
     id: "sistema-hermes",
     description:
-      "Sistema Hermes, desarrollo de interfaces y funcionalidades para la administración cobranza.",
+      "El sistema Hermes fue una aplicación desarrollada en .NET para llevar el control de cobranza a clientes, por medio de la gestión de insumos, mano de obra, materiales, etc. También se llevaba la administración de usuarios, roles, permisos, etc. y la generación de reportes para la gestión de la cobranza.",
     imageSrc: publicAsset("portafolio/hermes_1.jpeg"),
     imageGallery: [
       publicAsset("portafolio/hermes_1.jpeg"),
