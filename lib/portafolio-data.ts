@@ -121,6 +121,13 @@ const esProjects = [
     deployLink: "https://luiszelph.github.io/calculator/",
   },
   {
+    id: "simulador-sql",
+    description: "Aplicación para simular consultas sencillas de SQL.",
+    imageSrc: publicAsset("simulador-sql.png"),
+    gitHubLink: "https://github.com/luiszelph/simulador-sql",
+    deployLink: "https://luiszelph.github.io/simulador-sql/",
+  },
+  {
     id: "tienda-web",
     description:
       "Trabajo actualmente en el desarrollo de una tienda web, algunos de los retos han sido: Elaboración de interfaces y funcionalidades para realizar compras en linea, la integración de pagos con Paypal, la gestión de datos. La aplicación utiliza Nopcommerce por lo cual modificar algunas secciones es un reto.",

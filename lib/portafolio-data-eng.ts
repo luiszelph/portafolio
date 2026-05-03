@@ -140,6 +140,13 @@ export const portafolioDataEng: PortafolioData = {
       deployLink: "https://luiszelph.github.io/calculator/",
     },
     {
+      id: "simulador-sql",
+      description: "App to simulate simple SQL queries.",
+      imageSrc: publicAsset("simulador-sql.png"),
+      gitHubLink: "https://github.com/luiszelph/simulador-sql",
+      deployLink: "https://luiszelph.github.io/simulador-sql/",
+    },
+    {
       id: "web-store",
       description:
         "I am currently working on the development of a web store. Some of the challenges have been building interfaces and features for online purchases, integrating PayPal payments, and managing data. The application uses NopCommerce, so modifying some sections is challenging.",
