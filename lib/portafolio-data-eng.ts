@@ -126,27 +126,6 @@ export const portafolioDataEng: PortafolioData = {
   ],
   projects: [
     {
-      id: "tictactoe",
-      description: "My first project built with React: a tic-tac-toe game.",
-      imageSrc: publicAsset("projectTicTacToe.png"),
-      gitHubLink: "https://github.com/luiszelph/tictactoe",
-      deployLink: "https://luiszelph.github.io/tictactoe/",
-    },
-    {
-      id: "calculator",
-      description: "A small web calculator.",
-      imageSrc: publicAsset("projectCalculator.png"),
-      gitHubLink: "https://github.com/luiszelph/calculator",
-      deployLink: "https://luiszelph.github.io/calculator/",
-    },
-    {
-      id: "simulador-sql",
-      description: "App to simulate simple SQL queries.",
-      imageSrc: publicAsset("simulador-sql.png"),
-      gitHubLink: "https://github.com/luiszelph/simulador-sql",
-      deployLink: "https://luiszelph.github.io/simulador-sql/",
-    },
-    {
       id: "web-store",
       description:
         "I am currently working on the development of a web store. Some of the challenges have been building interfaces and features for online purchases, integrating PayPal payments, and managing data. The application uses NopCommerce, so modifying some sections is challenging.",
@@ -169,6 +148,27 @@ export const portafolioDataEng: PortafolioData = {
         publicAsset("portafolio/hermes_3.jpeg"),
         publicAsset("portafolio/hermes_4.jpeg"),
       ],
+    },
+    {
+      id: "simulador-sql",
+      description: "App to simulate simple SQL queries.",
+      imageSrc: publicAsset("simulador-sql.png"),
+      gitHubLink: "https://github.com/luiszelph/simulador-sql",
+      deployLink: "https://luiszelph.github.io/simulador-sql/",
+    },
+    {
+      id: "tictactoe",
+      description: "My first project built with React: a tic-tac-toe game.",
+      imageSrc: publicAsset("projectTicTacToe.png"),
+      gitHubLink: "https://github.com/luiszelph/tictactoe",
+      deployLink: "https://luiszelph.github.io/tictactoe/",
+    },
+    {
+      id: "calculator",
+      description: "A small web calculator.",
+      imageSrc: publicAsset("projectCalculator.png"),
+      gitHubLink: "https://github.com/luiszelph/calculator",
+      deployLink: "https://luiszelph.github.io/calculator/",
     },
   ],
 };

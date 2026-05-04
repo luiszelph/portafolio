@@ -106,28 +106,6 @@ const esTechnologies = [
 
 const esProjects = [
   {
-    id: "tictactoe",
-    description:
-      "Mi primer proyecto realizado en React: un juego de tres en raya.",
-    imageSrc: publicAsset("projectTicTacToe.png"),
-    gitHubLink: "https://github.com/luiszelph/tictactoe",
-    deployLink: "https://luiszelph.github.io/tictactoe/",
-  },
-  {
-    id: "calculator",
-    description: "Una pequeña calculadora web.",
-    imageSrc: publicAsset("projectCalculator.png"),
-    gitHubLink: "https://github.com/luiszelph/calculator",
-    deployLink: "https://luiszelph.github.io/calculator/",
-  },
-  {
-    id: "simulador-sql",
-    description: "Aplicación para simular consultas sencillas de SQL.",
-    imageSrc: publicAsset("simulador-sql.png"),
-    gitHubLink: "https://github.com/luiszelph/simulador-sql",
-    deployLink: "https://luiszelph.github.io/simulador-sql/",
-  },
-  {
     id: "tienda-web",
     description:
       "Trabajo actualmente en el desarrollo de una tienda web, algunos de los retos han sido: Elaboración de interfaces y funcionalidades para realizar compras en linea, la integración de pagos con Paypal, la gestión de datos. La aplicación utiliza Nopcommerce por lo cual modificar algunas secciones es un reto.",
@@ -150,6 +128,28 @@ const esProjects = [
       publicAsset("portafolio/hermes_3.jpeg"),
       publicAsset("portafolio/hermes_4.jpeg"),
     ],
+  },
+  {
+    id: "simulador-sql",
+    description: "Aplicación para simular consultas sencillas de SQL.",
+    imageSrc: publicAsset("simulador-sql.png"),
+    gitHubLink: "https://github.com/luiszelph/simulador-sql",
+    deployLink: "https://luiszelph.github.io/simulador-sql/",
+  },
+  {
+    id: "tictactoe",
+    description:
+      "Mi primer proyecto realizado en React: un juego de tres en raya.",
+    imageSrc: publicAsset("projectTicTacToe.png"),
+    gitHubLink: "https://github.com/luiszelph/tictactoe",
+    deployLink: "https://luiszelph.github.io/tictactoe/",
+  },
+  {
+    id: "calculator",
+    description: "Una pequeña calculadora web.",
+    imageSrc: publicAsset("projectCalculator.png"),
+    gitHubLink: "https://github.com/luiszelph/calculator",
+    deployLink: "https://luiszelph.github.io/calculator/",
   },
 ] as const;
 
