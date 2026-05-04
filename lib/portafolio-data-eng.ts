@@ -24,7 +24,7 @@ export const portafolioDataEng: PortafolioData = {
     body2:
       "I build business-focused web applications: APIs, dashboards, and internal systems.",
     body3:
-      "Experience with Angular, React, SQL Server, and process optimization.",
+      "Experience with ASP.NET MVC, C#, Angular, React, SQL Server, NopCommerce, and process optimization.",
     body4:
       "Interested in solving real problems with simple, scalable, and well-structured solutions.",
   },
@@ -106,6 +106,21 @@ export const portafolioDataEng: PortafolioData = {
         "Impact: increased operational efficiency and better information control.",
       imageSrc: publicAsset("ravisa.png"),
     },
+    {
+      id: "impulsora-elizondo",
+      name: "Impulsora Elizondo",
+      role: "Fullstack Developer (.NET)",
+      period: "November 2025 - Present",
+      highlights: [
+        "Developed an eCommerce platform supporting 10,000+ users with NopCommerce.",
+        "Implemented shopping cart and checkout features.",
+        "Integrated PayPal and Paywork payment gateways.",
+        "Optimized SQL queries to improve platform performance.",
+      ],
+      impact:
+        "Impact: improved platform stability and scalability for eCommerce operations.",
+      imageSrc: publicAsset("elizondo.png"),
+    },
   ],
   technologies: [
     { name: "JavaScript", imageSrc: publicAsset("javascript.png") },
@@ -116,13 +131,13 @@ export const portafolioDataEng: PortafolioData = {
     { name: "Angular", imageSrc: publicAsset("angular.png") },
     { name: "C#", imageSrc: publicAsset("csharp.png") },
     { name: "Next.js", imageSrc: publicAsset("nextjs.png") },
-    { name: "SQL", imageSrc: publicAsset("sql.png") },
-    { name: "JAVA", imageSrc: publicAsset("java.png") },
-    { name: "NET", imageSrc: publicAsset("net.png") },
-    { name: "MAUI", imageSrc: publicAsset("maui.png") },
-    { name: "CHATGPT", imageSrc: publicAsset("chatgpt.png") },
-    { name: "WINDSURF", imageSrc: publicAsset("windsurf.png") },
-    { name: "CURSOR", imageSrc: publicAsset("cursor.png") },
+    { name: "SQL Server", imageSrc: publicAsset("sql.png") },
+    { name: "ASP.NET MVC", imageSrc: publicAsset("net.png") },
+    { name: ".NET", imageSrc: publicAsset("net.png") },
+    { name: "NopCommerce", imageSrc: publicAsset("net.png") },
+    { name: "ChatGPT", imageSrc: publicAsset("chatgpt.png") },
+    { name: "Windsurf", imageSrc: publicAsset("windsurf.png") },
+    { name: "Cursor", imageSrc: publicAsset("cursor.png") },
   ],
   projects: [
     {

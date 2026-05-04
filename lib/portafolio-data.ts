@@ -22,7 +22,7 @@ const esHero = {
 const esAbout = {
   body: `Fullstack Developer especializado en .NET y SQL.`,
   body2: `Construyo aplicaciones web enfocadas en negocio: APIs, dashboards y sistemas internos.`,
-  body3: `Experiencia en Bootstrap, Jquery, Vanilla JS, Typescript, Angular, React, SQL Server y optimización de procesos.`,
+  body3: `Experiencia en ASP.NET MVC, C#, Angular, React, SQL Server, NopCommerce y optimización de procesos.`,
   body4: `Interesado en resolver problemas reales con soluciones simples, escalables y bien estructuradas.`,
 };
 
@@ -84,6 +84,21 @@ const esExperiences = [
       "Impacto: incremento en eficiencia operativa y mejor control de información.",
     imageSrc: publicAsset("ravisa.png"),
   },
+  {
+    id: "impulsora-elizondo",
+    name: "Impulsora Elizondo",
+    role: "Desarrollador Fullstack (.NET)",
+    period: "Noviembre 2025 - Actual",
+    highlights: [
+      "Desarrollo de plataforma eCommerce para +10,000 usuarios con NopCommerce.",
+      "Implementación de funcionalidades de carrito y flujo de compra.",
+      "Integración de pagos con PayPal y Paywork.",
+      "Optimización de consultas SQL para mejorar rendimiento de la plataforma.",
+    ],
+    impact:
+      "Impacto: mayor estabilidad y escalabilidad en operaciones de comercio electrónico.",
+    imageSrc: publicAsset("elizondo.png"),
+  },
 ] as const;
 
 const esTechnologies = [
@@ -95,13 +110,13 @@ const esTechnologies = [
   { name: "Angular", imageSrc: publicAsset("angular.png") },
   { name: "C#", imageSrc: publicAsset("csharp.png") },
   { name: "Next.js", imageSrc: publicAsset("nextjs.png") },
-  { name: "SQL", imageSrc: publicAsset("sql.png") },
-  { name: "JAVA", imageSrc: publicAsset("java.png") },
-  { name: "NET", imageSrc: publicAsset("net.png") },
-  { name: "MAUI", imageSrc: publicAsset("maui.png") },
-  { name: "CHATGPT", imageSrc: publicAsset("chatgpt.png") },
-  { name: "WINDSURF", imageSrc: publicAsset("windsurf.png") },
-  { name: "CURSOR", imageSrc: publicAsset("cursor.png") },
+  { name: "SQL Server", imageSrc: publicAsset("sql.png") },
+  { name: "ASP.NET MVC", imageSrc: publicAsset("net.png") },
+  { name: ".NET", imageSrc: publicAsset("net.png") },
+  { name: "NopCommerce", imageSrc: publicAsset("net.png") },
+  { name: "ChatGPT", imageSrc: publicAsset("chatgpt.png") },
+  { name: "Windsurf", imageSrc: publicAsset("windsurf.png") },
+  { name: "Cursor", imageSrc: publicAsset("cursor.png") },
 ] as const;
 
 const esProjects = [
