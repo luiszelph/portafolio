@@ -13,7 +13,7 @@ import { portafolioDataEng } from "@/lib/portafolio-data-eng";
 import type { PortafolioData } from "@/lib/portafolio-types";
 
 export default function Home() {
-  const [language, setLanguage] = useState<PortafolioData["lang"]>("es");
+  const [language, setLanguage] = useState<PortafolioData["lang"]>("en");
   const data = useMemo(
     () => (language === "en" ? portafolioDataEng : portafolioDataEs),
     [language],

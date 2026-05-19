@@ -60,8 +60,8 @@ export function PortafolioNav({
             className="h-8 rounded-md border border-line bg-page px-2 text-sm text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             aria-label={labels.language}
           >
-            <option value="es">Español</option>
             <option value="en">English</option>
+            <option value="es">Español</option>
           </select>
 
           <ThemeToggle language={language} />

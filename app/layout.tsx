@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Luis Zelph Moreno Ruiz — Portafolio",
+  title: "Luis Zelph Moreno Ruiz — Portfolio",
   description:
-    "Portafolio de Luis Zelph Moreno Ruiz: desarrollo web, experiencia y proyectos.",
+    "Portfolio of Luis Zelph Moreno Ruiz: web development, experience, and projects.",
 };
 
 /** Indica al navegador que la página admite ambos esquemas; el activo lo fija el script de tema + CSS. */
@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="es"
+      lang="en"
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full scroll-smooth antialiased`}
     >
