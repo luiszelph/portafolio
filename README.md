@@ -16,6 +16,21 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Contact form configuration
+
+Create a `.env.local` file using `env.local.example` as reference:
+
+```bash
+CONTACT_TO_EMAIL=luiszelph.morenoruiz@gmail.com
+CONTACT_FROM_EMAIL=Portfolio Contact <onboarding@resend.dev>
+RESEND_API_KEY=your-resend-api-key
+```
+
+`CONTACT_TO_EMAIL` is the inbox that receives portfolio messages. `RESEND_API_KEY`
+comes from your Resend dashboard. `CONTACT_FROM_EMAIL` can use
+`onboarding@resend.dev` for local testing; for production, verify a domain in
+Resend and use an email from that domain.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

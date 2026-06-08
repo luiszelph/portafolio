@@ -7,6 +7,7 @@ const esNavLinks = [
   { href: "#experiencia", label: "Experiencia" },
   { href: "#tecnologias", label: "Tecnologías" },
   { href: "#proyectos", label: "Proyectos" },
+  { href: "#contactar", label: "Contactar" },
 ] as const;
 
 /** Sube este número cuando reemplaces la imagen en disco pero mantengas el mismo nombre de archivo */
@@ -15,8 +16,14 @@ const HERO_IMAGE_VERSION = "1";
 const esHero = {
   kicker: "Portafolio",
   headline: "Bienvenidos, mi nombre es Luis Zelph Moreno Ruiz",
+  description:
+    "Fullstack Developer especializado en .NET, SQL y aplicaciones web de negocio.",
   imageSrc: publicAsset(`/developerZelph.png?v=${HERO_IMAGE_VERSION}`),
   imageAlt: "Retrato de Luis Zelph Moreno Ruiz",
+  actions: {
+    contact: "Contactarme",
+    projects: "Ver proyectos",
+  },
 };
 
 const esAbout = {
@@ -24,6 +31,29 @@ const esAbout = {
   body2: `Construyo aplicaciones web enfocadas en negocio: APIs, dashboards y sistemas internos.`,
   body3: `Experiencia en ASP.NET MVC, C#, Angular, React, SQL Server, NopCommerce y optimización de procesos.`,
   body4: `Interesado en resolver problemas reales con soluciones simples, escalables y bien estructuradas.`,
+};
+
+const esContact = {
+  title: "Contactar",
+  description:
+    "Envíame un mensaje directo. Solo necesito el asunto y el contenido para revisar tu solicitud.",
+  fields: {
+    asunto: "Asunto",
+    body: "Body",
+  },
+  placeholders: {
+    asunto: "Ej. Propuesta de proyecto",
+    body: "Escribe tu mensaje...",
+  },
+  actions: {
+    send: "Enviar mensaje",
+    sending: "Enviando...",
+  },
+  messages: {
+    sending: "Enviando mensaje...",
+    success: "Mensaje enviado correctamente.",
+    error: "No fue posible enviar el mensaje. Intenta de nuevo más tarde.",
+  },
 };
 
 const esExperiences = [
@@ -173,6 +203,7 @@ export const portafolioDataEs: PortafolioData = {
   navLinks: [...esNavLinks],
   hero: { ...esHero },
   about: { ...esAbout },
+  contact: { ...esContact },
   sectionTitles: {
     about: "Sobre mí",
     experience: "Experiencia laboral",

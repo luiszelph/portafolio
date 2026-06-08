@@ -20,6 +20,23 @@ export function HeroProfile({ hero }: HeroProfileProps) {
           <h1 className="mt-3 text-balance text-3xl font-semibold leading-tight text-ink md:text-4xl">
             {hero.headline}
           </h1>
+          <p className="mt-4 text-pretty text-base leading-relaxed text-ink-muted md:text-lg">
+            {hero.description}
+          </p>
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
+            <a
+              href="#contactar"
+              className="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-[#010000] transition hover:opacity-90"
+            >
+              {hero.actions.contact}
+            </a>
+            <a
+              href="#proyectos"
+              className="rounded-full border border-line px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-raised"
+            >
+              {hero.actions.projects}
+            </a>
+          </div>
         </div>
         <div className="relative shrink-0">
           <div className="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-hero-glow-from to-hero-glow-to opacity-70 blur dark:opacity-90" />

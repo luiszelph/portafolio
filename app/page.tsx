@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { AboutSection } from "@/components/AboutSection";
+import { Contactar } from "@/components/Contactar";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { HeroProfile } from "@/components/HeroProfile";
 import { MirrorCubeBackground } from "@/components/MirrorCubeBackground";
@@ -47,6 +48,7 @@ export default function Home() {
           visitSiteLabel={data.actions.visitSite}
           projects={data.projects}
         />
+        <Contactar contact={data.contact} />
       </main>
     </div>
   );

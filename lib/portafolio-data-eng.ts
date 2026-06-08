@@ -12,12 +12,19 @@ export const portafolioDataEng: PortafolioData = {
     { href: "#experiencia", label: "Experience" },
     { href: "#tecnologias", label: "Technologies" },
     { href: "#proyectos", label: "Projects" },
+    { href: "#contactar", label: "Contact" },
   ],
   hero: {
     kicker: "Portafolio",
     headline: "Welcome, my name is Luis Zelph Moreno Ruiz",
+    description:
+      "Fullstack Developer specialized in .NET, SQL, and business-focused web applications.",
     imageSrc: publicAsset(`/developerZelph.png?v=${HERO_IMAGE_VERSION}`),
     imageAlt: "Portrait of Luis Zelph Moreno Ruiz",
+    actions: {
+      contact: "Contact me",
+      projects: "View projects",
+    },
   },
   about: {
     body: "Fullstack Developer specialized in .NET and SQL.",
@@ -27,6 +34,28 @@ export const portafolioDataEng: PortafolioData = {
       "Experience with ASP.NET MVC, C#, Angular, React, SQL Server, NopCommerce, and process optimization.",
     body4:
       "Interested in solving real problems with simple, scalable, and well-structured solutions.",
+  },
+  contact: {
+    title: "Contact",
+    description:
+      "Send me a direct message. I only need the subject and content to review your request.",
+    fields: {
+      asunto: "Subject",
+      body: "Body",
+    },
+    placeholders: {
+      asunto: "E.g. Project proposal",
+      body: "Write your message...",
+    },
+    actions: {
+      send: "Send message",
+      sending: "Sending...",
+    },
+    messages: {
+      sending: "Sending message...",
+      success: "Message sent successfully.",
+      error: "The message could not be sent. Please try again later.",
+    },
   },
   sectionTitles: {
     about: "About me",

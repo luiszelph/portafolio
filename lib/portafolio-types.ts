@@ -6,8 +6,13 @@ export type NavLink = {
 export type HeroData = {
   kicker: string;
   headline: string;
+  description: string;
   imageSrc: string;
   imageAlt: string;
+  actions: {
+    contact: string;
+    projects: string;
+  };
 };
 
 export type AboutData = {
@@ -41,11 +46,34 @@ export type Project = {
   deployLink?: string;
 };
 
+export type ContactData = {
+  title: string;
+  description: string;
+  fields: {
+    asunto: string;
+    body: string;
+  };
+  placeholders: {
+    asunto: string;
+    body: string;
+  };
+  actions: {
+    send: string;
+    sending: string;
+  };
+  messages: {
+    sending: string;
+    success: string;
+    error: string;
+  };
+};
+
 export type PortafolioData = {
   lang: "es" | "en";
   navLinks: NavLink[];
   hero: HeroData;
   about: AboutData;
+  contact: ContactData;
   sectionTitles: {
     about: string;
     experience: string;
