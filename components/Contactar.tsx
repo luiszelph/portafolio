@@ -8,6 +8,8 @@ type ContactarProps = {
 };
 
 type SubmitState = "idle" | "sending" | "success" | "error";
+const CONTACT_API_URL =
+  process.env.NEXT_PUBLIC_CONTACT_API_URL?.trim() || "/api/contactar";
 
 export function Contactar({ contact }: ContactarProps) {
   const [asunto, setAsunto] = useState("");
@@ -23,17 +25,20 @@ export function Contactar({ contact }: ContactarProps) {
     setStatusMessage(contact.messages.sending);
 
     try {
-      const response = await fetch("/api/contactar", {
+      const response = await fetch(CONTACT_API_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ asunto, body }),
       });
-      const result = (await response.json()) as { message?: string };
+      const contentType = response.headers.get("content-type") ?? "";
+      const result = contentType.includes("application/json")
+        ? ((await response.json()) as { message?: string })
+        : null;
 
       if (!response.ok) {
-        throw new Error(result.message ?? contact.messages.error);
+        throw new Error(result?.message ?? contact.messages.error);
       }
 
       setAsunto("");

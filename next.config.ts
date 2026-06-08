@@ -2,19 +2,20 @@ import type { NextConfig } from "next";
 
 /**
  * Sin barra final. Vacío en local o en repo `usuario.github.io`.
- * En GitHub Actions se define para sitios de proyecto.
+ * En GitHub Pages se define para sitios de proyecto.
  * Usa también `NEXT_PUBLIC_BASE_PATH` con el mismo valor para `publicAsset()` (next/image no aplica basePath solo).
  */
-const productionFallbackBasePath = "/portafolio";
+const isGitHubPages = process.env.GITHUB_PAGES === "true";
+const productionFallbackBasePath = isGitHubPages ? "/portafolio" : "";
 
 const basePath =
   process.env.BASE_PATH?.trim() ||
   process.env.NEXT_PUBLIC_BASE_PATH?.trim() ||
-  (process.env.NODE_ENV === "production" ? productionFallbackBasePath : "") ||
+  productionFallbackBasePath ||
   "";
 
 const nextConfig: NextConfig = {
-  output: "export",
+  ...(isGitHubPages ? { output: "export" as const } : {}),
 
   ...(basePath
     ? {
