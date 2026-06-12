@@ -23,7 +23,6 @@ Create a `.env.local` file using `env.local.example` as reference:
 ```bash
 CONTACT_TO_EMAIL=luiszelph.morenoruiz@gmail.com
 CONTACT_FROM_EMAIL=Portfolio Contact <onboarding@resend.dev>
-CONTACT_SUBJECT_PREFIX=[Portafolio]
 RESEND_API_KEY=your-resend-api-key
 NEXT_PUBLIC_CONTACT_API_URL=/api/contactar
 ```
@@ -31,12 +30,12 @@ NEXT_PUBLIC_CONTACT_API_URL=/api/contactar
 `CONTACT_TO_EMAIL` is the inbox that receives portfolio messages. `RESEND_API_KEY`
 comes from your Resend dashboard. `CONTACT_FROM_EMAIL` can use
 `onboarding@resend.dev` for local testing; for production, verify a domain in
-Resend and use an email from that domain. `CONTACT_SUBJECT_PREFIX` defaults to
-`[Portafolio]` and is prepended to every contact email subject so Gmail filters
-can reliably identify these messages.
+Resend and use an email from that domain. The contact API prepends
+`PORTAFOLIO - ` to every contact email subject so Gmail filters can reliably
+identify these messages.
 
 In Gmail, create a label such as `Solicitudes de contacto Portafolio`, then add a
-filter where the subject contains `[Portafolio]`. Configure the filter to apply
+filter where the subject contains `PORTAFOLIO`. Configure the filter to apply
 that label and select "Never send it to Spam".
 
 GitHub Pages deploys this portfolio as a static export and cannot run

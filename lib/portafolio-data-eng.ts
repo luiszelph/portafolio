@@ -19,11 +19,18 @@ export const portafolioDataEng: PortafolioData = {
     headline: "Welcome, my name is Luis Zelph Moreno Ruiz",
     description:
       "Fullstack Developer specialized in .NET, SQL, and business-focused web applications.",
+    location: "Nuevo León, Mexico · Available remotely",
     imageSrc: publicAsset(`/developerZelph.png?v=${HERO_IMAGE_VERSION}`),
     imageAlt: "Portrait of Luis Zelph Moreno Ruiz",
     actions: {
       contact: "Contact me",
+      github: "GitHub",
+      linkedin: "LinkedIn",
       projects: "View projects",
+    },
+    socialLinks: {
+      github: "https://github.com/luiszelph",
+      linkedin: "https://www.linkedin.com/in/luis-zelph-moreno-ruiz-865779217",
     },
   },
   about: {
@@ -38,15 +45,28 @@ export const portafolioDataEng: PortafolioData = {
   contact: {
     title: "Contact",
     description:
-      "Send me a direct message. I only need the subject and content to review your request.",
+      "Send me a direct message with your contact details so I can review your request.",
+    responseNote: "I typically respond within 24-48 hours.",
     fields: {
+      nombre: "Name",
+      email: "Email",
+      phoneCountry: "Country",
+      telefono: "Phone",
       asunto: "Subject",
       body: "Body",
     },
     placeholders: {
+      nombre: "Your name",
+      email: "your.email@example.com",
+      telefono: "Optional phone number",
       asunto: "E.g. Project proposal",
       body: "Write your message...",
     },
+    phoneCountries: [
+      { code: "MX", label: "Mexico", dialCode: "+52", flag: "🇲🇽" },
+      { code: "US", label: "United States", dialCode: "+1", flag: "🇺🇸" },
+      { code: "CA", label: "Canada", dialCode: "+1", flag: "🇨🇦" },
+    ],
     actions: {
       send: "Send message",
       sending: "Sending...",
@@ -55,6 +75,9 @@ export const portafolioDataEng: PortafolioData = {
       sending: "Sending message...",
       success: "Message sent successfully.",
       error: "The message could not be sent. Please try again later.",
+    },
+    validation: {
+      emailInvalid: "Please enter a valid email address.",
     },
   },
   sectionTitles: {

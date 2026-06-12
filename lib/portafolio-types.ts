@@ -7,11 +7,18 @@ export type HeroData = {
   kicker: string;
   headline: string;
   description: string;
+  location: string;
   imageSrc: string;
   imageAlt: string;
   actions: {
     contact: string;
+    github: string;
+    linkedin: string;
     projects: string;
+  };
+  socialLinks: {
+    github: string;
+    linkedin: string;
   };
 };
 
@@ -49,14 +56,28 @@ export type Project = {
 export type ContactData = {
   title: string;
   description: string;
+  responseNote: string;
   fields: {
+    nombre: string;
+    email: string;
+    phoneCountry: string;
+    telefono: string;
     asunto: string;
     body: string;
   };
   placeholders: {
+    nombre: string;
+    email: string;
+    telefono: string;
     asunto: string;
     body: string;
   };
+  phoneCountries: {
+    code: string;
+    label: string;
+    dialCode: string;
+    flag: string;
+  }[];
   actions: {
     send: string;
     sending: string;
@@ -65,6 +86,9 @@ export type ContactData = {
     sending: string;
     success: string;
     error: string;
+  };
+  validation: {
+    emailInvalid: string;
   };
 };
 

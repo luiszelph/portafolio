@@ -29,7 +29,7 @@ export default function Home() {
         language={language}
         onLanguageChange={setLanguage}
       />
-      <main className="relative z-10 flex-1">
+      <main className="relative z-10 flex-1 pt-16">
         <HeroProfile hero={data.hero} />
         <AboutSection about={data.about} title={data.sectionTitles.about} />
         <ExperienceSection
@@ -48,7 +48,7 @@ export default function Home() {
           visitSiteLabel={data.actions.visitSite}
           projects={data.projects}
         />
-        <Contactar contact={data.contact} />
+        <Contactar contact={data.contact} language={language} />
       </main>
     </div>
   );

@@ -18,11 +18,18 @@ const esHero = {
   headline: "Bienvenidos, mi nombre es Luis Zelph Moreno Ruiz",
   description:
     "Fullstack Developer especializado en .NET, SQL y aplicaciones web de negocio.",
+  location: "Nuevo León, México · Disponible remoto",
   imageSrc: publicAsset(`/developerZelph.png?v=${HERO_IMAGE_VERSION}`),
   imageAlt: "Retrato de Luis Zelph Moreno Ruiz",
   actions: {
     contact: "Contactarme",
+    github: "GitHub",
+    linkedin: "LinkedIn",
     projects: "Ver proyectos",
+  },
+  socialLinks: {
+    github: "https://github.com/luiszelph",
+    linkedin: "https://www.linkedin.com/in/luis-zelph-moreno-ruiz-865779217",
   },
 };
 
@@ -36,15 +43,28 @@ const esAbout = {
 const esContact = {
   title: "Contactar",
   description:
-    "Envíame un mensaje directo. Solo necesito el asunto y el contenido para revisar tu solicitud.",
+    "Envíame un mensaje directo con tus datos de contacto para revisar tu solicitud.",
+  responseNote: "Normalmente respondo dentro de 24 a 48 horas.",
   fields: {
+    nombre: "Nombre",
+    email: "Correo",
+    phoneCountry: "País",
+    telefono: "Teléfono",
     asunto: "Asunto",
-    body: "Body",
+    body: "Mensaje",
   },
   placeholders: {
+    nombre: "Tu nombre",
+    email: "tu.correo@ejemplo.com",
+    telefono: "Número telefónico opcional",
     asunto: "Ej. Propuesta de proyecto",
     body: "Escribe tu mensaje...",
   },
+  phoneCountries: [
+    { code: "MX", label: "México", dialCode: "+52", flag: "🇲🇽" },
+    { code: "US", label: "Estados Unidos", dialCode: "+1", flag: "🇺🇸" },
+    { code: "CA", label: "Canadá", dialCode: "+1", flag: "🇨🇦" },
+  ],
   actions: {
     send: "Enviar mensaje",
     sending: "Enviando...",
@@ -53,6 +73,9 @@ const esContact = {
     sending: "Enviando mensaje...",
     success: "Mensaje enviado correctamente.",
     error: "No fue posible enviar el mensaje. Intenta de nuevo más tarde.",
+  },
+  validation: {
+    emailInvalid: "Agregue un correo válido.",
   },
 };
 
