@@ -106,6 +106,20 @@ export function ProjectsSection({
                   <p className="text-sm leading-relaxed text-ink-muted">
                     {project.description}
                   </p>
+                  {project.details ? (
+                    <dl className="mt-4 space-y-3">
+                      {project.details.map((detail) => (
+                        <div key={detail.label}>
+                          <dt className="text-xs font-semibold uppercase tracking-wide text-ink">
+                            {detail.label}
+                          </dt>
+                          <dd className="mt-1 text-sm leading-relaxed text-ink-muted">
+                            {detail.content}
+                          </dd>
+                        </div>
+                      ))}
+                    </dl>
+                  ) : null}
                   {project.gitHubLink || project.deployLink ? (
                     <div className="mt-4 flex flex-wrap gap-3 text-sm font-medium">
                       {project.gitHubLink ? (

@@ -188,7 +188,34 @@ const esProjects = [
   {
     id: "sistema-hermes",
     description:
-      "El sistema Hermes fue una aplicación desarrollada en .NET para llevar el control de cobranza a clientes, por medio de la gestión de insumos, mano de obra, materiales, etc. También se llevaba la administración de usuarios, roles, permisos, etc. y la generación de reportes para la gestión de la cobranza.",
+      "Sistema interno para administrar gastos generados en órdenes de carga, centralizar información operativa y facilitar reportes para clientes y facturación.",
+    details: [
+      {
+        label: "Problema resuelto",
+        content:
+          "El registro manual de gastos dificultaba el control operativo y la generación de reportes para clientes. Hermes permitió capturar gastos desde una interfaz web sencilla, centralizar la información y generar reportes por periodos de fechas para apoyar al equipo de facturación.",
+      },
+      {
+        label: "Arquitectura",
+        content:
+          "Aplicación web MVC desarrollada en .NET con backend en C#, base de datos SQL Server, módulos administrativos, usuarios, permisos y reportes automáticos.",
+      },
+      {
+        label: "Tecnologías utilizadas",
+        content:
+          ".NET, C#, SQL Server, JavaScript, Bootstrap 5, DataTables, CSS.",
+      },
+      {
+        label: "Resultados",
+        content:
+          "Uso interno por aproximadamente 40 usuarios de operación, supervisión, gerencia y facturación. Redujo trabajo manual, mejoró el control de información, centralizó datos, agilizó reportes e incluyó 8 módulos y 4 reportes principales.",
+      },
+      {
+        label: "Alcance desarrollado",
+        content:
+          "Participé en frontend, backend y base de datos: interfaces responsivas, lógica con JavaScript, endpoints, reglas de negocio, tablas y stored procedures.",
+      },
+    ],
     imageSrc: publicAsset("portafolio/hermes_1.jpeg"),
     imageGallery: [
       publicAsset("portafolio/hermes_1.jpeg"),

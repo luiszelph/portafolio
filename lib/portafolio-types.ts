@@ -44,9 +44,20 @@ export type Technology = {
   imageSrc: string;
 };
 
+export type TechnologyExpertise = {
+  title: string;
+  technologies: string[];
+  description: string;
+  level: string;
+};
+
 export type Project = {
   id: string;
   description: string;
+  details?: readonly {
+    label: string;
+    content: string;
+  }[];
   imageSrc: string;
   imageGallery?: readonly string[];
   gitHubLink?: string;
@@ -121,5 +132,6 @@ export type PortafolioData = {
   };
   experiences: Experience[];
   technologies: Technology[];
+  technologyExpertise: TechnologyExpertise[];
   projects: Project[];
 };
