@@ -41,6 +41,7 @@ export default function Home() {
           title={data.sectionTitles.technologies}
           description={data.sectionDescriptions.technologies}
           technologies={data.technologies}
+          technologyExpertise={data.technologyExpertise}
         />
         <ProjectsSection
           title={data.sectionTitles.projects}

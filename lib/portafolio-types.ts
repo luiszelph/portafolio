@@ -46,7 +46,7 @@ export type Technology = {
 
 export type TechnologyExpertise = {
   title: string;
-  technologies: string[];
+  technologies: readonly string[];
   description: string;
   level: string;
 };

@@ -191,6 +191,43 @@ export const portafolioDataEng: PortafolioData = {
     { name: "Windsurf", imageSrc: publicAsset("windsurf.png") },
     { name: "Cursor", imageSrc: publicAsset("cursor.png") },
   ],
+  technologyExpertise: [
+    {
+      title: "Backend & .NET",
+      technologies: [".NET", "C#", "ASP.NET MVC", "APIs"],
+      description:
+        "Development of business logic, endpoints, administrative modules, and maintenance for business-focused web applications.",
+      level: "Professional use",
+    },
+    {
+      title: "Frontend",
+      technologies: ["JavaScript", "React", "Angular", "HTML", "CSS"],
+      description:
+        "Building responsive interfaces, interaction logic, API consumption, and user experience improvements.",
+      level: "Professional and project use",
+    },
+    {
+      title: "SQL Server & Data",
+      technologies: ["SQL Server", "Stored Procedures", "Queries", "Reports"],
+      description:
+        "Table design, queries, stored procedures, and reporting support for operational processes.",
+      level: "Professional use",
+    },
+    {
+      title: "E-commerce",
+      technologies: ["NopCommerce", "Cart", "Checkout", "Payments"],
+      description:
+        "Development and maintenance of features for e-commerce platforms and purchase flows.",
+      level: "Professional use",
+    },
+    {
+      title: "Tools & AI",
+      technologies: ["GitHub", "Cursor", "ChatGPT", "Windsurf"],
+      description:
+        "Use of development tools, version control, and AI assistance to speed up analysis, implementation, and documentation.",
+      level: "Frequent use",
+    },
+  ],
   projects: [
     {
       id: "web-store",

@@ -172,6 +172,44 @@ const esTechnologies = [
   { name: "Cursor", imageSrc: publicAsset("cursor.png") },
 ] as const;
 
+const esTechnologyExpertise = [
+  {
+    title: "Backend & .NET",
+    technologies: [".NET", "C#", "ASP.NET MVC", "APIs"],
+    description:
+      "Desarrollo de lógica de negocio, endpoints, módulos administrativos y mantenimiento de aplicaciones web empresariales.",
+    level: "Uso laboral",
+  },
+  {
+    title: "Frontend",
+    technologies: ["JavaScript", "React", "Angular", "HTML", "CSS"],
+    description:
+      "Construcción de interfaces responsivas, lógica de interacción, consumo de APIs y mejoras enfocadas en experiencia de usuario.",
+    level: "Uso laboral y proyectos",
+  },
+  {
+    title: "SQL Server & Datos",
+    technologies: ["SQL Server", "Stored Procedures", "Consultas", "Reportes"],
+    description:
+      "Diseño de tablas, consultas, procedimientos almacenados y soporte a reportes para procesos operativos.",
+    level: "Uso laboral",
+  },
+  {
+    title: "E-commerce",
+    technologies: ["NopCommerce", "Carrito", "Checkout", "Pagos"],
+    description:
+      "Desarrollo y mantenimiento de funcionalidades para plataformas de comercio electrónico y flujos de compra.",
+    level: "Uso laboral",
+  },
+  {
+    title: "Herramientas & AI",
+    technologies: ["GitHub", "Cursor", "ChatGPT", "Windsurf"],
+    description:
+      "Uso de herramientas de desarrollo, control de versiones y asistencia con IA para acelerar análisis, implementación y documentación.",
+    level: "Uso frecuente",
+  },
+] as const;
+
 const esProjects = [
   {
     id: "tienda-web",
@@ -282,6 +320,7 @@ export const portafolioDataEs: PortafolioData = {
     highlights: [...item.highlights],
   })),
   technologies: [...esTechnologies],
+  technologyExpertise: [...esTechnologyExpertise],
   projects: [...esProjects],
 };
 
