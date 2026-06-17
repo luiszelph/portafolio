@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Luis Zelph Moreno Ruiz — Portfolio",
+  title: "Luis Zelph Moreno Ruiz — Full Stack Developer (.NET, E-commerce)",
   description:
-    "Portfolio of Luis Zelph Moreno Ruiz: web development, experience, and projects.",
+    "Full Stack Developer especializado en .NET, SQL Server y e-commerce. Sistemas internos y plataformas en producción para operaciones reales en México.",
 };
 
 /** Indica al navegador que la página admite ambos esquemas; el activo lo fija el script de tema + CSS. */

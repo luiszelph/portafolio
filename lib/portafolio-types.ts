@@ -53,6 +53,7 @@ export type TechnologyExpertise = {
 
 export type Project = {
   id: string;
+  title: string;
   description: string;
   details?: readonly {
     label: string;

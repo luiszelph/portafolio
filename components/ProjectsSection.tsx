@@ -69,7 +69,7 @@ export function ProjectsSection({
                 <div className="relative aspect-video w-full bg-card-img-bg">
                   <Image
                     src={publicAsset(currentImage)}
-                    alt={`Captura del proyecto ${project.id}`}
+                    alt={`Captura del proyecto ${project.title}`}
                     fill
                     sizes="(min-width: 640px) 45vw, 100vw"
                     className="object-cover"
@@ -103,7 +103,10 @@ export function ProjectsSection({
                   ) : null}
                 </div>
                 <div className="border-t border-line p-4">
-                  <p className="text-sm leading-relaxed text-ink-muted">
+                  <h3 className="text-base font-semibold text-ink">
+                    {project.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-ink-muted">
                     {project.description}
                   </p>
                   {project.details ? (

@@ -14,10 +14,10 @@ const esNavLinks = [
 const HERO_IMAGE_VERSION = "1";
 
 const esHero = {
-  kicker: "Portafolio",
-  headline: "Bienvenidos, mi nombre es Luis Zelph Moreno Ruiz",
+  kicker: "Full Stack Developer · .NET · E-commerce",
+  headline: "Luis Zelph Moreno Ruiz.",
   description:
-    "Fullstack Developer especializado en .NET, SQL y aplicaciones web de negocio.",
+    "Más de 4 años construyendo plataformas internas y e-commerce en producción para operaciones reales en México — de APIs y dashboards a tiendas con miles de usuarios.",
   location: "Nuevo León, México · Disponible remoto",
   imageSrc: publicAsset(`/developerZelph.png?v=${HERO_IMAGE_VERSION}`),
   imageAlt: "Retrato de Luis Zelph Moreno Ruiz",
@@ -34,10 +34,13 @@ const esHero = {
 };
 
 const esAbout = {
-  body: `Fullstack Developer especializado en .NET y SQL.`,
-  body2: `Construyo aplicaciones web enfocadas en negocio: APIs, dashboards y sistemas internos.`,
-  body3: `Experiencia en ASP.NET MVC, C#, Angular, React, SQL Server, NopCommerce y optimización de procesos.`,
-  body4: `Interesado en resolver problemas reales con soluciones simples, escalables y bien estructuradas.`,
+  body: "Construyo software que resuelve operaciones reales:",
+  body2:
+    "desde centralizar gastos logísticos hasta plataformas de compra con miles de usuarios.",
+  body3:
+    "Mi fuerte está en .NET, C# y SQL Server, con experiencia en ASP.NET MVC, Angular, React y NopCommerce.",
+  body4:
+    "Busco entregar soluciones simples, escalables y bien estructuradas — con foco en rendimiento, mantenibilidad e impacto en el negocio.",
 };
 
 const esContact = {
@@ -213,8 +216,9 @@ const esTechnologyExpertise = [
 const esProjects = [
   {
     id: "tienda-web",
+    title: "E-commerce Impulsora Elizondo",
     description:
-      "Trabajo actualmente en el desarrollo de una tienda web, algunos de los retos han sido: Elaboración de interfaces y funcionalidades para realizar compras en linea, la integración de pagos con Paypal, la gestión de datos. La aplicación utiliza Nopcommerce por lo cual modificar algunas secciones es un reto.",
+      "Plataforma de comercio electrónico con NopCommerce para más de 10,000 usuarios: carrito, checkout, integración de pagos con PayPal y Paywork, y optimización de consultas SQL para mejorar el rendimiento.",
     imageSrc: publicAsset("portafolio/tw_1.jpeg"),
     imageGallery: [
       publicAsset("portafolio/tw_1.jpeg"),
@@ -225,8 +229,9 @@ const esProjects = [
   },
   {
     id: "sistema-hermes",
+    title: "Hermes — Gestión de gastos operativos",
     description:
-      "Sistema interno para administrar gastos generados en órdenes de carga, centralizar información operativa y facilitar reportes para clientes y facturación.",
+      "Sistema interno para administrar gastos de órdenes de carga, centralizar información operativa y generar reportes para clientes y facturación. En uso por ~40 usuarios en operaciones, supervisión y gerencia.",
     details: [
       {
         label: "Problema resuelto",
@@ -264,22 +269,27 @@ const esProjects = [
   },
   {
     id: "simulador-sql",
-    description: "Aplicación para simular consultas sencillas de SQL.",
+    title: "Simulador SQL",
+    description:
+      "Aplicación web interactiva para practicar consultas SQL básicas. Proyecto personal con código abierto y demo en vivo.",
     imageSrc: publicAsset("simulador-sql.png"),
     gitHubLink: "https://github.com/luiszelph/simulador-sql",
     deployLink: "https://luiszelph.github.io/simulador-sql/",
   },
   {
     id: "tictactoe",
+    title: "Tres en raya — React",
     description:
-      "Mi primer proyecto realizado en React: un juego de tres en raya.",
+      "Primer proyecto con React: juego de tres en raya con lógica de turnos y detección de ganador. Experimento de aprendizaje con despliegue en GitHub Pages.",
     imageSrc: publicAsset("projectTicTacToe.png"),
     gitHubLink: "https://github.com/luiszelph/tictactoe",
     deployLink: "https://luiszelph.github.io/tictactoe/",
   },
   {
     id: "calculator",
-    description: "Una pequeña calculadora web.",
+    title: "Calculadora web",
+    description:
+      "Calculadora básica en el navegador. Proyecto de práctica para reforzar fundamentos de JavaScript y manipulación del DOM.",
     imageSrc: publicAsset("projectCalculator.png"),
     gitHubLink: "https://github.com/luiszelph/calculator",
     deployLink: "https://luiszelph.github.io/calculator/",
@@ -299,11 +309,12 @@ export const portafolioDataEs: PortafolioData = {
     projects: "Proyectos",
   },
   sectionDescriptions: {
-    experience: "Resumen de colaboraciones y aprendizajes en proyectos web.",
+    experience:
+      "De manufactura y salud a logística y retail: cuatro años entregando sistemas web en producción.",
     technologies:
-      "Herramientas y lenguajes con los que he trabajado en proyectos web.",
+      "Stack principal para aplicaciones empresariales, e-commerce y sistemas internos.",
     projects:
-      "Algunos trabajos personales con enlace al repositorio y despliegue.",
+      "Sistemas en producción y proyectos con demo en vivo — ordenados por impacto en negocio.",
   },
   actions: {
     visitSite: "Visitar sitio",
