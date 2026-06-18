@@ -84,67 +84,12 @@ const esContact = {
 
 const esExperiences = [
   {
-    id: "ruhrpumpen",
-    name: "Ruhrpumpen",
-    role: "Desarrollador Web (Prácticas profesionales)",
-    period: "Enero 2022 – Agosto 2022",
-    highlights: [
-      "Participé en el desarrollo de una aplicación web interna utilizando C#, JavaScript y SQL Server.",
-      "Implementé interfaces con HTML y Bootstrap para mejorar la usabilidad.",
-      "Realicé consultas SQL para gestión de datos operativos.",
-    ],
-    impact:
-      "Resultado: fortalecí bases sólidas en desarrollo fullstack y lógica de negocio.",
-    imageSrc: publicAsset("rp.png"),
-  },
-  {
-    id: "tdisa",
-    name: "TDI",
-    role: "Desarrollador Web Jr.",
-    period: "Agosto 2022 – Diciembre 2022",
-    highlights: [
-      "Desarrollé funcionalidades para sistemas del sector médico con ASP.NET y JavaScript.",
-      "Implementé lógica backend en C# y consultas en SQL Server.",
-      "Colaboré en la mejora de procesos internos mediante herramientas digitales.",
-    ],
-    impact:
-      "Impacto: optimización de flujos de información en aplicaciones médicas.",
-    imageSrc: publicAsset("tdisa.png"),
-  },
-  {
-    id: "innatos",
-    name: "Innatos",
-    role: "Desarrollador Frontend / Fullstack",
-    period: "Enero 2023 – Noviembre 2023",
-    highlights: [
-      "Desarrollé interfaces dinámicas con Angular y AngularJS.",
-      "Integré APIs REST desarrolladas en C#.",
-      "Implementé consumo y manipulación de datos desde SQL Server.",
-    ],
-    impact:
-      "Impacto: mejora en la experiencia de usuario y rendimiento de aplicaciones web.",
-    imageSrc: publicAsset("innatos.png"),
-  },
-  {
-    id: "ravisa",
-    name: "Ravisa",
-    role: "Desarrollador Fullstack (.NET)",
-    period: "Junio 2024 – Noviembre 2025",
-    highlights: [
-      "Desarrollé y mantuve aplicaciones web utilizando .NET, C# y SQL Server.",
-      "Construí APIs y lógica de negocio para sistemas internos.",
-      "Implementé mejoras en dashboards y visualización de datos.",
-      "Participé en la optimización de procesos operativos mediante soluciones digitales.",
-    ],
-    impact:
-      "Impacto: incremento en eficiencia operativa y mejor control de información.",
-    imageSrc: publicAsset("ravisa.png"),
-  },
-  {
     id: "impulsora-elizondo",
     name: "Impulsora Elizondo",
     role: "Desarrollador Fullstack (.NET)",
-    period: "Noviembre 2025 - Actual",
+    period: "Noviembre 2025 – Actual",
+    sector: "Retail · E-commerce",
+    isCurrent: true,
     highlights: [
       "Desarrollo de plataforma eCommerce para +10,000 usuarios con NopCommerce.",
       "Implementación de funcionalidades de carrito y flujo de compra.",
@@ -153,7 +98,73 @@ const esExperiences = [
     ],
     impact:
       "Impacto: mayor estabilidad y escalabilidad en operaciones de comercio electrónico.",
+    technologies: [".NET", "C#", "NopCommerce", "SQL Server", "PayPal"],
     imageSrc: publicAsset("elizondo.png"),
+  },
+  {
+    id: "ravisa",
+    name: "Ravisa",
+    role: "Desarrollador Fullstack (.NET)",
+    period: "Junio 2024 – Noviembre 2025",
+    sector: "Logística",
+    highlights: [
+      "Desarrollé y mantuve aplicaciones web utilizando .NET, C# y SQL Server.",
+      "Construí APIs y lógica de negocio para sistemas internos.",
+      "Implementé mejoras en dashboards y visualización de datos.",
+      "Participé en la optimización de procesos operativos mediante soluciones digitales.",
+    ],
+    impact:
+      "Impacto: incremento en eficiencia operativa y mejor control de información.",
+    technologies: [".NET", "C#", "SQL Server", "ASP.NET MVC", "JavaScript"],
+    imageSrc: publicAsset("ravisa.png"),
+  },
+  {
+    id: "innatos",
+    name: "Innatos",
+    role: "Desarrollador Frontend / Fullstack",
+    period: "Enero 2023 – Noviembre 2023",
+    sector: "Producto",
+    highlights: [
+      "Desarrollé interfaces dinámicas con Angular y AngularJS.",
+      "Integré APIs REST desarrolladas en C#.",
+      "Implementé consumo y manipulación de datos desde SQL Server.",
+    ],
+    impact:
+      "Impacto: mejora en la experiencia de usuario y rendimiento de aplicaciones web.",
+    technologies: ["Angular", "AngularJS", "C#", "REST APIs", "SQL Server"],
+    imageSrc: publicAsset("innatos.png"),
+  },
+  {
+    id: "tdisa",
+    name: "TDI",
+    role: "Desarrollador Web Jr.",
+    period: "Agosto 2022 – Diciembre 2022",
+    sector: "Salud",
+    highlights: [
+      "Desarrollé funcionalidades para sistemas del sector médico con ASP.NET y JavaScript.",
+      "Implementé lógica backend en C# y consultas en SQL Server.",
+      "Colaboré en la mejora de procesos internos mediante herramientas digitales.",
+    ],
+    impact:
+      "Impacto: optimización de flujos de información en aplicaciones médicas.",
+    technologies: ["ASP.NET", "C#", "JavaScript", "SQL Server"],
+    imageSrc: publicAsset("tdisa.png"),
+  },
+  {
+    id: "ruhrpumpen",
+    name: "Ruhrpumpen",
+    role: "Desarrollador Web (Prácticas profesionales)",
+    period: "Enero 2022 – Agosto 2022",
+    sector: "Manufactura",
+    highlights: [
+      "Participé en el desarrollo de una aplicación web interna utilizando C#, JavaScript y SQL Server.",
+      "Implementé interfaces con HTML y Bootstrap para mejorar la usabilidad.",
+      "Realicé consultas SQL para gestión de datos operativos.",
+    ],
+    impact:
+      "Resultado: fortalecí bases sólidas en desarrollo fullstack y lógica de negocio.",
+    technologies: ["C#", "JavaScript", "SQL Server", "Bootstrap", "HTML"],
+    imageSrc: publicAsset("rp.png"),
   },
 ] as const;
 
@@ -315,6 +326,10 @@ export const portafolioDataEs: PortafolioData = {
       "Stack principal para aplicaciones empresariales, e-commerce y sistemas internos.",
     projects:
       "Sistemas en producción y proyectos con demo en vivo — ordenados por impacto en negocio.",
+  },
+  experienceUi: {
+    hint: "Toca cada etapa para ver el detalle.",
+    currentBadge: "Actual",
   },
   actions: {
     visitSite: "Visitar sitio",

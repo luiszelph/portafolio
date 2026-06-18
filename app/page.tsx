@@ -36,6 +36,7 @@ export default function Home() {
           title={data.sectionTitles.experience}
           description={data.sectionDescriptions.experience}
           experiences={data.experiences}
+          ui={data.experienceUi}
         />
         <TechnologiesSection
           title={data.sectionTitles.technologies}

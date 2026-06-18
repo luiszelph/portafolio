@@ -94,6 +94,10 @@ export const portafolioDataEng: PortafolioData = {
     projects:
       "Production systems and projects with live demos — ordered by business impact.",
   },
+  experienceUi: {
+    hint: "Tap each stage to see the details.",
+    currentBadge: "Current",
+  },
   actions: {
     visitSite: "Visit site",
   },
@@ -106,66 +110,12 @@ export const portafolioDataEng: PortafolioData = {
   },
   experiences: [
     {
-      id: "ruhrpumpen",
-      name: "Ruhrpumpen",
-      role: "Web Developer (Internship)",
-      period: "January 2022 – August 2022",
-      highlights: [
-        "Contributed to the development of an internal web application using C#, JavaScript, and SQL Server.",
-        "Implemented interfaces with HTML and Bootstrap to improve usability.",
-        "Built SQL queries for operational data management.",
-      ],
-      impact:
-        "Result: strengthened solid foundations in fullstack development and business logic.",
-      imageSrc: publicAsset("rp.png"),
-    },
-    {
-      id: "tdisa",
-      name: "TDI",
-      role: "Junior Web Developer",
-      period: "August 2022 – December 2022",
-      highlights: [
-        "Developed features for healthcare systems with ASP.NET and JavaScript.",
-        "Implemented backend logic in C# and SQL Server queries.",
-        "Collaborated on internal process improvements through digital tools.",
-      ],
-      impact: "Impact: optimized information flows in medical applications.",
-      imageSrc: publicAsset("tdisa.png"),
-    },
-    {
-      id: "innatos",
-      name: "Innatos",
-      role: "Frontend / Fullstack Developer",
-      period: "January 2023 – November 2023",
-      highlights: [
-        "Developed dynamic interfaces with Angular and AngularJS.",
-        "Integrated REST APIs developed in C#.",
-        "Implemented data consumption and manipulation from SQL Server.",
-      ],
-      impact:
-        "Impact: improved user experience and web application performance.",
-      imageSrc: publicAsset("innatos.png"),
-    },
-    {
-      id: "ravisa",
-      name: "Ravisa",
-      role: "Fullstack Developer (.NET)",
-      period: "June 2024 – November 2025",
-      highlights: [
-        "Developed and maintained web applications using .NET, C#, and SQL Server.",
-        "Built APIs and business logic for internal systems.",
-        "Implemented improvements in dashboards and data visualization.",
-        "Participated in optimizing operational processes through digital solutions.",
-      ],
-      impact:
-        "Impact: increased operational efficiency and better information control.",
-      imageSrc: publicAsset("ravisa.png"),
-    },
-    {
       id: "impulsora-elizondo",
       name: "Impulsora Elizondo",
       role: "Fullstack Developer (.NET)",
-      period: "November 2025 - Present",
+      period: "November 2025 – Present",
+      sector: "Retail · E-commerce",
+      isCurrent: true,
       highlights: [
         "Developed an eCommerce platform supporting 10,000+ users with NopCommerce.",
         "Implemented shopping cart and checkout features.",
@@ -174,7 +124,72 @@ export const portafolioDataEng: PortafolioData = {
       ],
       impact:
         "Impact: improved platform stability and scalability for eCommerce operations.",
+      technologies: [".NET", "C#", "NopCommerce", "SQL Server", "PayPal"],
       imageSrc: publicAsset("elizondo.png"),
+    },
+    {
+      id: "ravisa",
+      name: "Ravisa",
+      role: "Fullstack Developer (.NET)",
+      period: "June 2024 – November 2025",
+      sector: "Logistics",
+      highlights: [
+        "Developed and maintained web applications using .NET, C#, and SQL Server.",
+        "Built APIs and business logic for internal systems.",
+        "Implemented improvements in dashboards and data visualization.",
+        "Participated in optimizing operational processes through digital solutions.",
+      ],
+      impact:
+        "Impact: increased operational efficiency and better information control.",
+      technologies: [".NET", "C#", "SQL Server", "ASP.NET MVC", "JavaScript"],
+      imageSrc: publicAsset("ravisa.png"),
+    },
+    {
+      id: "innatos",
+      name: "Innatos",
+      role: "Frontend / Fullstack Developer",
+      period: "January 2023 – November 2023",
+      sector: "Product",
+      highlights: [
+        "Developed dynamic interfaces with Angular and AngularJS.",
+        "Integrated REST APIs developed in C#.",
+        "Implemented data consumption and manipulation from SQL Server.",
+      ],
+      impact:
+        "Impact: improved user experience and web application performance.",
+      technologies: ["Angular", "AngularJS", "C#", "REST APIs", "SQL Server"],
+      imageSrc: publicAsset("innatos.png"),
+    },
+    {
+      id: "tdisa",
+      name: "TDI",
+      role: "Junior Web Developer",
+      period: "August 2022 – December 2022",
+      sector: "Healthcare",
+      highlights: [
+        "Developed features for healthcare systems with ASP.NET and JavaScript.",
+        "Implemented backend logic in C# and SQL Server queries.",
+        "Collaborated on internal process improvements through digital tools.",
+      ],
+      impact: "Impact: optimized information flows in medical applications.",
+      technologies: ["ASP.NET", "C#", "JavaScript", "SQL Server"],
+      imageSrc: publicAsset("tdisa.png"),
+    },
+    {
+      id: "ruhrpumpen",
+      name: "Ruhrpumpen",
+      role: "Web Developer (Internship)",
+      period: "January 2022 – August 2022",
+      sector: "Manufacturing",
+      highlights: [
+        "Contributed to the development of an internal web application using C#, JavaScript, and SQL Server.",
+        "Implemented interfaces with HTML and Bootstrap to improve usability.",
+        "Built SQL queries for operational data management.",
+      ],
+      impact:
+        "Result: strengthened solid foundations in fullstack development and business logic.",
+      technologies: ["C#", "JavaScript", "SQL Server", "Bootstrap", "HTML"],
+      imageSrc: publicAsset("rp.png"),
     },
   ],
   technologies: [

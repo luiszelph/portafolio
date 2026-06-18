@@ -34,8 +34,11 @@ export type Experience = {
   name: string;
   role: string;
   period: string;
+  sector?: string;
+  isCurrent?: boolean;
   highlights: string[];
   impact: string;
+  technologies?: readonly string[];
   imageSrc: string;
 };
 
@@ -120,6 +123,10 @@ export type PortafolioData = {
     experience: string;
     technologies: string;
     projects: string;
+  };
+  experienceUi: {
+    hint: string;
+    currentBadge: string;
   };
   actions: {
     visitSite: string;

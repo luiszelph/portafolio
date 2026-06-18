@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useId, useState } from "react";
 import { publicAsset } from "@/lib/public-asset";
 import type { Experience } from "@/lib/portafolio-types";
 
@@ -6,64 +9,153 @@ type ExperienceSectionProps = {
   title: string;
   description: string;
   experiences: Experience[];
+  ui: {
+    hint: string;
+    currentBadge: string;
+  };
 };
+
+function ChevronIcon({ open }: { open: boolean }) {
+  return (
+    <svg
+      aria-hidden
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      className={`mt-1 h-5 w-5 shrink-0 text-ink-muted transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+    >
+      <path
+        fillRule="evenodd"
+        d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+}
 
 export function ExperienceSection({
   title,
   description,
   experiences,
+  ui,
 }: ExperienceSectionProps) {
+  const sectionId = useId();
+  const defaultOpenId =
+    experiences.find((job) => job.isCurrent)?.id ?? experiences[0]?.id ?? null;
+  const [openId, setOpenId] = useState<string | null>(defaultOpenId);
+
+  const toggleJob = (id: string) => {
+    setOpenId((current) => (current === id ? null : id));
+  };
+
   return (
     <section
       id="experiencia"
       className="scroll-mt-24 border-y border-line bg-subtle py-16 md:py-20"
       aria-labelledby="experiencia-heading"
     >
-      <div className="mx-auto max-w-5xl px-4 md:px-6">
+      <div className="mx-auto max-w-3xl px-4 md:px-6">
         <h2
           id="experiencia-heading"
           className="text-2xl font-semibold tracking-tight text-ink"
         >
           {title}
         </h2>
-        <p className="mt-2 max-w-2xl text-sm text-ink-muted">
-          {description}
-        </p>
-        <ul className="mt-10 grid gap-6 md:grid-cols-2">
-          {experiences.map((job) => (
-            <li
-              key={job.id}
-              className="group relative overflow-hidden rounded-2xl border border-line bg-raised shadow-sm"
-            >
-              <div className="flex h-full flex-col sm:flex-row">
-                <div className="relative h-44 w-full bg-card-img-bg sm:h-auto sm:w-44 sm:min-w-44">
-                  <Image
-                    src={publicAsset(job.imageSrc)}
-                    alt={`Logo o imagen de ${job.name}`}
-                    fill
-                    sizes="(min-width: 768px) 176px, 100vw"
-                    className="object-contain p-6 transition duration-300 group-hover:scale-[1.02]"
-                  />
-              </div>
-                <div className="border-t border-line p-4 sm:flex-1 sm:border-l sm:border-t-0 sm:p-5">
-                  <h3 className="text-base font-semibold text-ink">{job.name}</h3>
-                  <p className="mt-1 text-sm font-medium text-ink-muted">{job.role}</p>
-                  <p className="mt-1 text-xs font-medium tracking-wide text-ink-muted/90">
-                    {job.period}
-                  </p>
-                  <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-ink-muted">
-                    {job.highlights.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                  <p className="mt-4 text-sm font-medium leading-relaxed text-ink">
-                    {job.impact}
-                  </p>
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
+        <p className="mt-2 max-w-2xl text-sm text-ink-muted">{description}</p>
+        <p className="mt-1 text-xs text-ink-muted/90">{ui.hint}</p>
+
+        <ol className="relative mt-10 space-y-3 before:absolute before:top-3 before:bottom-3 before:left-[7px] before:w-px before:bg-line">
+          {experiences.map((job, index) => {
+            const isOpen = openId === job.id;
+            const panelId = `${sectionId}-${job.id}-panel`;
+
+            return (
+              <li key={job.id} className="relative pl-8">
+                <span
+                  aria-hidden
+                  className="absolute top-[1.35rem] left-0 z-10 h-2.5 w-2.5 -translate-x-1/2 rounded-full bg-accent ring-4 ring-subtle"
+                />
+
+                <article className="overflow-hidden rounded-2xl border border-line bg-raised shadow-sm transition-shadow hover:shadow-md">
+                  <button
+                    type="button"
+                    id={`${sectionId}-${job.id}-trigger`}
+                    aria-expanded={isOpen}
+                    aria-controls={panelId}
+                    onClick={() => toggleJob(job.id)}
+                    className="flex w-full items-start gap-3 p-4 text-left transition-colors hover:bg-subtle/60 md:gap-4 md:p-5"
+                  >
+                    <div className="relative mt-0.5 h-10 w-10 shrink-0 overflow-hidden rounded-lg border border-line bg-card-img-bg md:h-11 md:w-11">
+                      <Image
+                        src={publicAsset(job.imageSrc)}
+                        alt={`Logo de ${job.name}`}
+                        width={44}
+                        height={44}
+                        className="h-full w-full object-contain p-1.5"
+                      />
+                    </div>
+
+                    <div className="min-w-0 flex-1">
+                      <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                        <span className="text-xs font-semibold tabular-nums text-ink-muted">
+                          {index + 1}.
+                        </span>
+                        <h3 className="text-base font-semibold text-ink">
+                          {job.name}
+                        </h3>
+                        {job.isCurrent ? (
+                          <span className="rounded-full bg-accent/20 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-accent ring-1 ring-accent/30">
+                            {ui.currentBadge}
+                          </span>
+                        ) : null}
+                      </div>
+                      <p className="mt-0.5 text-sm font-medium text-ink-muted">
+                        {job.role}
+                      </p>
+                      <p className="mt-0.5 text-xs tracking-wide text-ink-muted/90">
+                        {job.period}
+                        {job.sector ? ` · ${job.sector}` : ""}
+                      </p>
+                    </div>
+
+                    <ChevronIcon open={isOpen} />
+                  </button>
+
+                  <div
+                    id={panelId}
+                    role="region"
+                    aria-labelledby={`${sectionId}-${job.id}-trigger`}
+                    className={`grid transition-[grid-template-rows] duration-200 ease-out ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+                  >
+                    <div className="overflow-hidden">
+                      <div className="border-t border-line px-4 pb-5 pt-4 md:px-5 md:pb-6 md:pl-[4.25rem]">
+                        <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed text-ink-muted">
+                          {job.highlights.map((item) => (
+                            <li key={item}>{item}</li>
+                          ))}
+                        </ul>
+                        <p className="mt-4 text-sm font-medium leading-relaxed text-ink">
+                          {job.impact}
+                        </p>
+                        {job.technologies && job.technologies.length > 0 ? (
+                          <div className="mt-4 flex flex-wrap gap-2">
+                            {job.technologies.map((technology) => (
+                              <span
+                                key={technology}
+                                className="rounded-full bg-accent/15 px-2.5 py-1 text-xs font-medium text-accent ring-1 ring-accent/25"
+                              >
+                                {technology}
+                              </span>
+                            ))}
+                          </div>
+                        ) : null}
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            );
+          })}
+        </ol>
       </div>
     </section>
   );
