@@ -54,10 +54,17 @@ export type TechnologyExpertise = {
   level: string;
 };
 
+export type ProjectGroup = "production" | "demo" | "experiment";
+
 export type Project = {
   id: string;
   title: string;
+  category: string;
+  group: ProjectGroup;
+  featured?: boolean;
   description: string;
+  metrics?: readonly string[];
+  technologies: readonly string[];
   details?: readonly {
     label: string;
     content: string;
@@ -127,6 +134,19 @@ export type PortafolioData = {
   experienceUi: {
     hint: string;
     currentBadge: string;
+  };
+  projectsUi: {
+    groups: {
+      production: string;
+      demo: string;
+      experiment: string;
+    };
+    viewCaseStudy: string;
+    hideCaseStudy: string;
+    tryDemo: string;
+    viewOnGitHub: string;
+    previousImage: string;
+    nextImage: string;
   };
   actions: {
     visitSite: string;

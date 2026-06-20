@@ -92,11 +92,24 @@ export const portafolioDataEng: PortafolioData = {
     technologies:
       "Core stack for enterprise applications, e-commerce, and internal business systems.",
     projects:
-      "Production systems and projects with live demos — ordered by business impact.",
+      "Real systems with real users — from enterprise platforms to technical demos.",
   },
   experienceUi: {
     hint: "Tap each stage to see the details.",
     currentBadge: "Current",
+  },
+  projectsUi: {
+    groups: {
+      production: "In production",
+      demo: "Demos & open source",
+      experiment: "Experiments",
+    },
+    viewCaseStudy: "View case study",
+    hideCaseStudy: "Hide case study",
+    tryDemo: "Try demo",
+    viewOnGitHub: "GitHub",
+    previousImage: "Previous image",
+    nextImage: "Next image",
   },
   actions: {
     visitSite: "Visit site",
@@ -248,23 +261,15 @@ export const portafolioDataEng: PortafolioData = {
   ],
   projects: [
     {
-      id: "web-store",
-      title: "Impulsora Elizondo E-commerce",
-      description:
-        "NopCommerce e-commerce platform supporting 10,000+ users: shopping cart, checkout, PayPal and Paywork payment integration, and SQL query optimization for better performance.",
-      imageSrc: publicAsset("portafolio/tw_1.jpeg"),
-      imageGallery: [
-        publicAsset("portafolio/tw_1.jpeg"),
-        publicAsset("portafolio/tw_2.jpeg"),
-        publicAsset("portafolio/tw_3.jpeg"),
-        publicAsset("portafolio/tw_4.jpeg"),
-      ],
-    },
-    {
       id: "hermes-system",
       title: "Hermes — Operational expense management",
+      category: "Internal system · Logistics",
+      group: "production",
+      featured: true,
       description:
-        "Internal system for managing cargo order expenses, centralizing operational data, and generating reports for clients and billing. Used by ~40 users across operations, supervision, and management.",
+        "Internal system to centralize cargo order expenses, eliminate manual tracking, and generate billing reports.",
+      metrics: ["~40 users", "8 modules", "4 reports"],
+      technologies: [".NET", "C#", "SQL Server", "Bootstrap", "DataTables"],
       details: [
         {
           label: "Problem solved",
@@ -277,14 +282,9 @@ export const portafolioDataEng: PortafolioData = {
             "MVC web application built with .NET, a C# backend, SQL Server database, administrative modules, users, permissions, and automated reports.",
         },
         {
-          label: "Technologies used",
-          content:
-            ".NET, C#, SQL Server, JavaScript, Bootstrap 5, DataTables, CSS.",
-        },
-        {
           label: "Results",
           content:
-            "Used internally by approximately 40 users across operations, supervision, management, and billing. It reduced manual work, improved information control, centralized data, accelerated reporting, and included 8 modules and 4 main reports.",
+            "Used internally by approximately 40 users across operations, supervision, management, and billing. It reduced manual work, improved information control, centralized data, and accelerated reporting.",
         },
         {
           label: "Scope delivered",
@@ -301,10 +301,31 @@ export const portafolioDataEng: PortafolioData = {
       ],
     },
     {
+      id: "web-store",
+      title: "Impulsora Elizondo E-commerce",
+      category: "E-commerce · In production",
+      group: "production",
+      description:
+        "NopCommerce e-commerce platform for retail operations at scale: shopping cart, checkout, and integrated payments.",
+      metrics: ["10,000+ users", "Integrated payments", "NopCommerce"],
+      technologies: [".NET", "NopCommerce", "SQL Server", "PayPal", "Paywork"],
+      imageSrc: publicAsset("portafolio/tw_1.jpeg"),
+      imageGallery: [
+        publicAsset("portafolio/tw_1.jpeg"),
+        publicAsset("portafolio/tw_2.jpeg"),
+        publicAsset("portafolio/tw_3.jpeg"),
+        publicAsset("portafolio/tw_4.jpeg"),
+      ],
+    },
+    {
       id: "simulador-sql",
       title: "SQL Simulator",
+      category: "Technical demo · Open source",
+      group: "demo",
       description:
-        "Interactive web app to practice basic SQL queries. Personal open-source project with a live demo.",
+        "Interactive web app to practice basic SQL queries. Open-source project with a live demo.",
+      metrics: ["Live demo", "Open source"],
+      technologies: ["JavaScript", "HTML", "CSS"],
       imageSrc: publicAsset("simulador-sql.png"),
       gitHubLink: "https://github.com/luiszelph/simulador-sql",
       deployLink: "https://luiszelph.github.io/simulador-sql/",
@@ -312,8 +333,11 @@ export const portafolioDataEng: PortafolioData = {
     {
       id: "tictactoe",
       title: "Tic-tac-toe — React",
+      category: "Experiment · React",
+      group: "experiment",
       description:
-        "First React project: tic-tac-toe game with turn logic and win detection. Learning experiment deployed on GitHub Pages.",
+        "First React project: game with turn logic and win detection.",
+      technologies: ["React", "JavaScript"],
       imageSrc: publicAsset("projectTicTacToe.png"),
       gitHubLink: "https://github.com/luiszelph/tictactoe",
       deployLink: "https://luiszelph.github.io/tictactoe/",
@@ -321,8 +345,11 @@ export const portafolioDataEng: PortafolioData = {
     {
       id: "calculator",
       title: "Web calculator",
+      category: "Practice · JavaScript",
+      group: "experiment",
       description:
-        "Basic browser calculator. Practice project to reinforce JavaScript fundamentals and DOM manipulation.",
+        "Basic browser calculator to reinforce JavaScript fundamentals and DOM manipulation.",
+      technologies: ["JavaScript", "HTML", "CSS"],
       imageSrc: publicAsset("projectCalculator.png"),
       gitHubLink: "https://github.com/luiszelph/calculator",
       deployLink: "https://luiszelph.github.io/calculator/",

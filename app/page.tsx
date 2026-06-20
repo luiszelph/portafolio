@@ -49,6 +49,7 @@ export default function Home() {
           description={data.sectionDescriptions.projects}
           visitSiteLabel={data.actions.visitSite}
           projects={data.projects}
+          ui={data.projectsUi}
         />
         <Contactar contact={data.contact} language={language} />
       </main>

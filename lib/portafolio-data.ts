@@ -226,23 +226,15 @@ const esTechnologyExpertise = [
 
 const esProjects = [
   {
-    id: "tienda-web",
-    title: "E-commerce Impulsora Elizondo",
-    description:
-      "Plataforma de comercio electrónico con NopCommerce para más de 10,000 usuarios: carrito, checkout, integración de pagos con PayPal y Paywork, y optimización de consultas SQL para mejorar el rendimiento.",
-    imageSrc: publicAsset("portafolio/tw_1.jpeg"),
-    imageGallery: [
-      publicAsset("portafolio/tw_1.jpeg"),
-      publicAsset("portafolio/tw_2.jpeg"),
-      publicAsset("portafolio/tw_3.jpeg"),
-      publicAsset("portafolio/tw_4.jpeg"),
-    ],
-  },
-  {
     id: "sistema-hermes",
     title: "Hermes — Gestión de gastos operativos",
+    category: "Sistema interno · Logística",
+    group: "production" as const,
+    featured: true,
     description:
-      "Sistema interno para administrar gastos de órdenes de carga, centralizar información operativa y generar reportes para clientes y facturación. En uso por ~40 usuarios en operaciones, supervisión y gerencia.",
+      "Sistema interno para centralizar gastos de órdenes de carga, eliminar registro manual y generar reportes para facturación.",
+    metrics: ["~40 usuarios", "8 módulos", "4 reportes"],
+    technologies: [".NET", "C#", "SQL Server", "Bootstrap", "DataTables"],
     details: [
       {
         label: "Problema resuelto",
@@ -255,14 +247,9 @@ const esProjects = [
           "Aplicación web MVC desarrollada en .NET con backend en C#, base de datos SQL Server, módulos administrativos, usuarios, permisos y reportes automáticos.",
       },
       {
-        label: "Tecnologías utilizadas",
-        content:
-          ".NET, C#, SQL Server, JavaScript, Bootstrap 5, DataTables, CSS.",
-      },
-      {
         label: "Resultados",
         content:
-          "Uso interno por aproximadamente 40 usuarios de operación, supervisión, gerencia y facturación. Redujo trabajo manual, mejoró el control de información, centralizó datos, agilizó reportes e incluyó 8 módulos y 4 reportes principales.",
+          "Uso interno por aproximadamente 40 usuarios de operación, supervisión, gerencia y facturación. Redujo trabajo manual, mejoró el control de información, centralizó datos y agilizó reportes.",
       },
       {
         label: "Alcance desarrollado",
@@ -279,10 +266,31 @@ const esProjects = [
     ],
   },
   {
+    id: "tienda-web",
+    title: "E-commerce Impulsora Elizondo",
+    category: "E-commerce · En producción",
+    group: "production" as const,
+    description:
+      "Plataforma de comercio electrónico con NopCommerce para operaciones de retail a escala: carrito, checkout y pagos integrados.",
+    metrics: ["10,000+ usuarios", "Pagos integrados", "NopCommerce"],
+    technologies: [".NET", "NopCommerce", "SQL Server", "PayPal", "Paywork"],
+    imageSrc: publicAsset("portafolio/tw_1.jpeg"),
+    imageGallery: [
+      publicAsset("portafolio/tw_1.jpeg"),
+      publicAsset("portafolio/tw_2.jpeg"),
+      publicAsset("portafolio/tw_3.jpeg"),
+      publicAsset("portafolio/tw_4.jpeg"),
+    ],
+  },
+  {
     id: "simulador-sql",
     title: "Simulador SQL",
+    category: "Demo técnica · Open source",
+    group: "demo" as const,
     description:
-      "Aplicación web interactiva para practicar consultas SQL básicas. Proyecto personal con código abierto y demo en vivo.",
+      "Aplicación web interactiva para practicar consultas SQL básicas. Código abierto con demo en vivo.",
+    metrics: ["Demo en vivo", "Open source"],
+    technologies: ["JavaScript", "HTML", "CSS"],
     imageSrc: publicAsset("simulador-sql.png"),
     gitHubLink: "https://github.com/luiszelph/simulador-sql",
     deployLink: "https://luiszelph.github.io/simulador-sql/",
@@ -290,8 +298,11 @@ const esProjects = [
   {
     id: "tictactoe",
     title: "Tres en raya — React",
+    category: "Experimento · React",
+    group: "experiment" as const,
     description:
-      "Primer proyecto con React: juego de tres en raya con lógica de turnos y detección de ganador. Experimento de aprendizaje con despliegue en GitHub Pages.",
+      "Primer proyecto con React: juego con lógica de turnos y detección de ganador.",
+    technologies: ["React", "JavaScript"],
     imageSrc: publicAsset("projectTicTacToe.png"),
     gitHubLink: "https://github.com/luiszelph/tictactoe",
     deployLink: "https://luiszelph.github.io/tictactoe/",
@@ -299,8 +310,11 @@ const esProjects = [
   {
     id: "calculator",
     title: "Calculadora web",
+    category: "Práctica · JavaScript",
+    group: "experiment" as const,
     description:
-      "Calculadora básica en el navegador. Proyecto de práctica para reforzar fundamentos de JavaScript y manipulación del DOM.",
+      "Calculadora básica en el navegador para reforzar fundamentos de JavaScript y DOM.",
+    technologies: ["JavaScript", "HTML", "CSS"],
     imageSrc: publicAsset("projectCalculator.png"),
     gitHubLink: "https://github.com/luiszelph/calculator",
     deployLink: "https://luiszelph.github.io/calculator/",
@@ -325,11 +339,24 @@ export const portafolioDataEs: PortafolioData = {
     technologies:
       "Stack principal para aplicaciones empresariales, e-commerce y sistemas internos.",
     projects:
-      "Sistemas en producción y proyectos con demo en vivo — ordenados por impacto en negocio.",
+      "Sistemas reales con usuarios reales — de plataformas empresariales a demos técnicas.",
   },
   experienceUi: {
     hint: "Toca cada etapa para ver el detalle.",
     currentBadge: "Actual",
+  },
+  projectsUi: {
+    groups: {
+      production: "En producción",
+      demo: "Demos y código abierto",
+      experiment: "Experimentos",
+    },
+    viewCaseStudy: "Ver case study",
+    hideCaseStudy: "Ocultar case study",
+    tryDemo: "Probar demo",
+    viewOnGitHub: "GitHub",
+    previousImage: "Imagen anterior",
+    nextImage: "Imagen siguiente",
   },
   actions: {
     visitSite: "Visitar sitio",
