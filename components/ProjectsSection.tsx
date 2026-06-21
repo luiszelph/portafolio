@@ -268,8 +268,12 @@ function FeaturedProjectCard({
 }) {
   return (
     <article className="overflow-hidden rounded-2xl border border-line bg-raised shadow-sm transition-shadow hover:shadow-md">
-      <div className="grid lg:grid-cols-2">
-        <ProjectGallery project={project} ui={ui} aspectClass="aspect-video lg:aspect-auto lg:min-h-[320px]" />
+      <div className="grid lg:grid-cols-2 lg:items-start">
+        <ProjectGallery
+          project={project}
+          ui={ui}
+          aspectClass="aspect-video lg:aspect-auto lg:h-[320px] lg:max-h-[320px] lg:shrink-0"
+        />
         <div className="border-t border-line p-5 lg:border-t-0 lg:border-l lg:p-6">
           <ProjectCardContent
             project={project}
@@ -277,29 +281,6 @@ function FeaturedProjectCard({
             visitSiteLabel={visitSiteLabel}
           />
         </div>
-      </div>
-    </article>
-  );
-}
-
-function StandardProjectCard({
-  project,
-  ui,
-  visitSiteLabel,
-}: {
-  project: Project;
-  ui: ProjectsUi;
-  visitSiteLabel: string;
-}) {
-  return (
-    <article className="overflow-hidden rounded-2xl border border-line bg-raised shadow-sm transition-shadow hover:shadow-md">
-      <ProjectGallery project={project} ui={ui} />
-      <div className="border-t border-line p-5">
-        <ProjectCardContent
-          project={project}
-          ui={ui}
-          visitSiteLabel={visitSiteLabel}
-        />
       </div>
     </article>
   );
@@ -370,11 +351,7 @@ function ProjectGroupSection({
 }) {
   if (projects.length === 0) return null;
 
-  const featured = projects.find((project) => project.featured);
-  const standard = projects.filter(
-    (project) => !project.featured && groupKey !== "experiment",
-  );
-  const compact = groupKey === "experiment" ? projects : [];
+  const useFeaturedLayout = groupKey === "production" || groupKey === "demo";
 
   return (
     <div className="mt-10 first:mt-10">
@@ -383,33 +360,20 @@ function ProjectGroupSection({
       </h3>
 
       <div className="mt-4 space-y-4">
-        {featured ? (
-          <FeaturedProjectCard
-            project={featured}
-            ui={ui}
-            visitSiteLabel={visitSiteLabel}
-          />
-        ) : null}
+        {useFeaturedLayout
+          ? projects.map((project) => (
+              <FeaturedProjectCard
+                key={project.id}
+                project={project}
+                ui={ui}
+                visitSiteLabel={visitSiteLabel}
+              />
+            ))
+          : null}
 
-        {standard.length > 0 ? (
-          <ul
-            className={`grid gap-4 ${standard.length > 1 ? "md:grid-cols-2" : ""}`}
-          >
-            {standard.map((project) => (
-              <li key={project.id}>
-                <StandardProjectCard
-                  project={project}
-                  ui={ui}
-                  visitSiteLabel={visitSiteLabel}
-                />
-              </li>
-            ))}
-          </ul>
-        ) : null}
-
-        {compact.length > 0 ? (
+        {!useFeaturedLayout ? (
           <ul className="grid gap-3 sm:grid-cols-2">
-            {compact.map((project) => (
+            {projects.map((project) => (
               <li key={project.id}>
                 <CompactProjectCard
                   project={project}
