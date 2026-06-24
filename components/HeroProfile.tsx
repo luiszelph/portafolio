@@ -29,7 +29,7 @@ export function HeroProfile({ hero }: HeroProfileProps) {
           <div className="mt-7 flex flex-col flex-wrap gap-3 sm:flex-row sm:justify-center md:justify-start">
             <a
               href="#contactar"
-              className="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-[#010000] transition hover:opacity-90"
+              className="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground transition hover:opacity-90"
             >
               {hero.actions.contact}
             </a>

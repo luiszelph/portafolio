@@ -151,7 +151,7 @@ function ProjectActions({
           type="button"
           onClick={onToggleCaseStudy}
           aria-expanded={caseStudyOpen}
-          className="rounded-full bg-accent px-3.5 py-1.5 text-sm font-semibold text-[#010000] transition hover:opacity-90"
+          className="rounded-full bg-accent px-3.5 py-1.5 text-sm font-semibold text-accent-foreground transition hover:opacity-90"
         >
           {caseStudyOpen ? ui.hideCaseStudy : ui.viewCaseStudy}
         </button>
@@ -164,7 +164,7 @@ function ProjectActions({
           className={`rounded-full px-3.5 py-1.5 text-sm font-semibold transition ${
             project.details?.length
               ? "border border-line text-ink hover:bg-subtle dark:hover:bg-raised"
-              : "bg-accent text-[#010000] hover:opacity-90"
+              : "bg-accent text-accent-foreground hover:opacity-90"
           }`}
         >
           {project.group === "demo" || project.group === "experiment"

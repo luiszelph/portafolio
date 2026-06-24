@@ -277,7 +277,7 @@ export function Contactar({ contact, language }: ContactarProps) {
                 <button
                   type="submit"
                   disabled={isSending}
-                  className="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-[#010000] transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-70"
+                  className="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-70"
                 >
                   {isSending ? contact.actions.sending : contact.actions.send}
                 </button>

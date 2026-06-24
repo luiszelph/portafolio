@@ -2,7 +2,7 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Paleta: #fcd2a8 #a2b0c0 #cdd2d9 #3d3632 #010000 — light: acento #bfb6a4 */
+/* Paleta: #991743 #a2b0c0 #cdd2d9 #3d3632 #010000 — light: acento #bfb6a4 */
 html.light {
   color-scheme: light;
   --page: #ffffff;
@@ -11,6 +11,7 @@ html.light {
   --ink: #010000;
   --ink-muted: #3d3632;
   --accent: #bfb6a4;
+  --accent-foreground: #010000;
   --line: #cdd2d9;
   --line-strong: #a2b0c0;
   --panel: #e8eaed;
@@ -29,7 +30,8 @@ html.dark {
   --subtle: #1a1816;
   --ink: #cdd2d9;
   --ink-muted: #a2b0c0;
-  --accent: #fcd2a8;
+  --accent: #991743;
+  --accent-foreground: #ffffff;
   --line: #3d3632;
   --line-strong: #a2b0c0;
   --panel: #3d3632;
@@ -48,6 +50,7 @@ html.dark {
   --color-ink: var(--ink);
   --color-ink-muted: var(--ink-muted);
   --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
   --color-line: var(--line);
   --color-line-strong: var(--line-strong);
   --color-panel: var(--panel);
